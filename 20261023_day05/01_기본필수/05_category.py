@@ -34,3 +34,8 @@ valid_ready = encoder.transform(valid).tolist()
 print("열 순서:", encoder.categories_[0].tolist())
 # valid의 변환 결과를 출력한다.
 print("valid 변환:", valid_ready)
+# Q: summary는 qa보다 높은 등급이라는 의미를 갖는가?
+# A: 그렇지 않다. One-hot 인코딩은 각 범주에 해당하는가의 여부만 나타낸다.
+# task_type은 범주형 데이터이고, 순서나 크기를 갖지 않는다. 이를 qa=0, summary=1과 같이 
+# 하나의 열에 하나의 숫자로만 표현하면 모델은 서로 크기를 비교할 수 있는 데이터로 오해하고 학습할 수 있다.
+# 따라서 one-hot 인코딩으로 각 범주마다 열을 만들어 해당하면 1, 아니면 0으로 표시한다.
