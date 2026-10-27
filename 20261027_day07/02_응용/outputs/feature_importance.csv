@@ -1,0 +1,9 @@
+﻿feature,importance
+num__input_chars,0.5642561704363525
+num__allowed_tools,0.16695992834839143
+cat__task_type_qa,0.04682965690389289
+cat__task_type_research,0.04055336036469088
+cat__task_type_summary,0.042773957718423815
+cat__priority_high,0.039793770166542314
+cat__priority_low,0.045077508700060526
+cat__priority_normal,0.05375564736164577
