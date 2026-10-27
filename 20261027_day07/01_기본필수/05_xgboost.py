@@ -29,11 +29,11 @@ train, valid = train_test_split(develop, test_size=0.25, stratify=develop["faile
 # -----------------------------------------------------------------------------
 # train에서 input_chars 열을 X_train으로 저장한다.
 X_train = train[["input_chars"]]
-# valid에서 input_chars 열을 X_train으로 저장한다.
+# valid에서 input_chars 열을 X_valid으로 저장한다.
 X_valid = valid[["input_chars"]]
-# train에서 failed 열을 X_train으로 저장한다.
+# train에서 failed 열을 y_train으로 저장한다.
 y_train = train["failed"]
-# valid에서 failed 열을 X_train으로 저장한다.
+# valid에서 failed 열을 y_valid으로 저장한다.
 y_valid = valid["failed"]
 
 # -----------------------------------------------------------------------------
@@ -57,9 +57,40 @@ from sklearn.metrics import f1_score
 # tree_method="hist"는 값을 구간(히스토그램)으로 묶어 분할 후보를 빠르게 찾는다. 
 # random_state=42는 subsample의 무작위 행 선택을 고정해 결과를 재현한다. 
 # n_jobs=1은 CPU 1개만 써서 환경이 달라도 같은 결과를 낸다.
-model = XGBClassifier(n_estimators=80, max_depth=2, learning_rate=0.05,
-                      objective="binary:logistic", eval_metric="logloss",
-                      tree_method="hist", random_state=42, n_jobs=1)
+model = XGBClassifier(
+    n_estimators=80,             # 학습할 의사결정나무(Decision Tree)의 개수 (80개)
+                                 # 이전 트리의 예측을 보완하는 트리를 순차적으로 추가
+                                 # 값이 클수록 복잡한 패턴을 학습할 수 있지만 과적합 위험과 학습 시간 증가
+
+    max_depth=2,                 # 각 의사결정나무의 최대 깊이 (2단계)
+                                 # 값이 클수록 복잡한 데이터 패턴을 학습할 수 있음
+                                 # 값이 너무 크면 과적합(Overfitting)이 발생할 수 있음
+
+    learning_rate=0.05,          # 학습률: 새로운 트리의 보정값을 기존 예측에 반영하는 비율
+                                 # 0.05는 각 트리의 보정값을 5% 크기로 반영한다는 의미
+                                 # 값이 작을수록 점진적으로 학습하며, 일반적으로 더 많은 트리가 필요함
+
+    objective="binary:logistic", # 학습 목적함수: 이진 분류(Binary Classification)
+                                 # 정답이 0 또는 1인 문제에 사용
+                                 # 로지스틱 손실을 최소화하며 클래스 1의 예측 확률을 학습
+
+    eval_metric="logloss",       # 모델 평가 지표: 로그 손실(Log Loss)
+                                 # 실제 정답과 예측 확률의 차이를 평가
+                                 # 잘못된 예측에 높은 확신을 보일수록 큰 페널티 부여
+                                 # 값이 0에 가까울수록 좋은 성능을 의미
+
+    tree_method="hist",          # 트리 생성 방식: 히스토그램 기반 알고리즘
+                                 # 연속형 특성값을 여러 구간(Bin)으로 나누어 분할 기준 탐색
+                                 # 효율적인 계산을 통해 트리 학습 속도를 높이는 방식
+
+    random_state=42,             # 난수 시드(Random Seed) 고정
+                                 # 데이터 샘플링 등 무작위 동작의 재현성을 높이기 위한 설정
+                                 # 42라는 숫자 자체에 특별한 의미는 없음
+
+    n_jobs=1                     # 학습 과정에서 사용할 병렬 스레드 수
+                                 # 1은 단일 스레드로 연산하도록 설정
+                                 # -1은 사용 가능한 모든 CPU 논리 코어를 활용하도록 설정
+)
 # 학습
 model.fit(X_train, y_train)
 # 예측
