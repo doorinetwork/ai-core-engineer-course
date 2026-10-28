@@ -6,7 +6,6 @@
 from pathlib import Path
 # 데이터 처리를 위해 외부 라이브러리 Pandas를 import한다.
 import pandas as pd
-# 배열 생성 및 수치 연산을 위해 외부 라이브러리 numpy를 가져온다.
 # 데이터를 train / valid / test로 나누기 위해 외부 라이브러리 scikit-learn(sklearn)의 model_selection에서 train_test_split을 가져온다.
 # 목적: 원본 표를 학습용·검증용·최종 평가용으로 나누기 위해 쓴다.
 # 기능: 행을 무작위로 섞은 뒤 지정한 비율로 두 묶음으로 나눈다. stratify를 주면 정답 비율을 양쪽에 똑같이 유지한다.
