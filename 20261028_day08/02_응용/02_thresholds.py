@@ -21,8 +21,6 @@ from sklearn.metrics import confusion_matrix, f1_score, roc_auc_score
 OUT = Path(__file__).resolve().parent / "outputs"
 # 디렉토리가 이미 존재한다면 무시한다.
 OUT.mkdir(exist_ok=True)
-OUT = Path(__file__).resolve().parent / "outputs"
-OUT.mkdir(exist_ok=True)
 
 # -----------------------------------------------------------------------------
 # 정답과 확률 준비하기
