@@ -1,0 +1,11 @@
+{
+  "n": 4,
+  "Accuracy": 0.5,
+  "Precision": 0.0,
+  "Recall": 0.0,
+  "F1": 0.0,
+  "ROC_AUC": 0.16666666666666669,
+  "TP": 0,
+  "actual_failed": 1,
+  "threshold": 0.5
+}
