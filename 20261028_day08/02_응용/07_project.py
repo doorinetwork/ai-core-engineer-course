@@ -32,7 +32,16 @@ OUT = HERE / "outputs"
 # -----------------------------------------------------------------------------
 # 평가 계획 읽기
 # -----------------------------------------------------------------------------
+# 06_plan.py가 저장한 평가 계획 JSON을 UTF-8로 읽어 dict로 바꾼 뒤 plan에 저장한다.
+# plan: selected(선택 모델 이름 "Logistic_FE"), 
+#       C(1), 
+#       max_iter(1000), 
+#       features(원본 입력 열 4개), 
+#       derived(True), 
+#       threshold(0.5), 
+#       split_ids(분할별 id 목록) 등을 가진다.
 plan = json.loads((OUT / "selection.json").read_text(encoding="utf-8"))
+# requests.csv 데이터를 읽고 request_id 열을 행 이름(인덱스)으로 정해 raw에 저장한다.
 raw = pd.read_csv(HERE / "data/requests.csv").set_index("request_id")
 
 # -----------------------------------------------------------------------------
