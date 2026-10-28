@@ -1,0 +1,5 @@
+﻿request_id,actual,probability_failed,predicted
+B015,0,0.42857142857142855,0
+B010,1,0.2,0
+B009,0,0.2,0
+B005,0,1.0,1
