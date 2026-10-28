@@ -1,0 +1,38 @@
+{
+  "model": "DecisionTreeClassifier",
+  "max_depth": 3,
+  "random_state": 42,
+  "features": [
+    "input_chars"
+  ],
+  "threshold": 0.5,
+  "rule": "score > threshold",
+  "positive_label": 1,
+  "selection": "train12 3-fold mean F1; tie: original first",
+  "train_ids": [
+    "B013",
+    "B008",
+    "B016",
+    "B014",
+    "B020",
+    "B007",
+    "B017",
+    "B019",
+    "B011",
+    "B001",
+    "B002",
+    "B018"
+  ],
+  "valid_ids": [
+    "B003",
+    "B012",
+    "B004",
+    "B006"
+  ],
+  "test_ids": [
+    "B015",
+    "B010",
+    "B009",
+    "B005"
+  ]
+}
