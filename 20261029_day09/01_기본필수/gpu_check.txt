@@ -1,0 +1,4 @@
+torch=2.14.0+cu130
+cuda_build=13.0
+cuda_available=True
+selected_device=cpu
