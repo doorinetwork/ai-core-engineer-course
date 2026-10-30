@@ -22,7 +22,7 @@ import copy
 # 외부 라이브러리. Python 시각화 라이브러리.
 import matplotlib
 # 창을 띄우지 않고 PNG에 저장한다. "Agg"는 화면 없이 이미지 파일만 만드는 backend라 서버·터미널 환경에서도 오류 없이 동작한다. pyplot을 불러오기 전에 정해야 적용된다.
-matplotlib.use("Agg")  # 창을 띄우지 않고 PNG에 저장합니다.
+matplotlib.use("Agg")  
 # 외부 라이브러리. 목적: loss 곡선 그림 그리기. 기능: plot, axvline, savefig 같은 그리기 함수를 제공한다.
 import matplotlib.pyplot as plt
 
@@ -194,7 +194,7 @@ for config in configs:
     plt.axvline(best["epoch"], linestyle="--", label="best epoch")
     # x축 이름을 붙인다.
     plt.xlabel("Epoch")
-    # x축 이름을 붙인다.
+    # y축 이름을 붙인다.
     plt.ylabel("Loss")
     # 각 곡선의 label을 범례로 표시한다.
     plt.legend()
