@@ -1,0 +1,28 @@
+{
+  "device": "cpu",
+  "epochs": 80,
+  "train_rows": 12,
+  "valid_rows": 4,
+  "test_used": false,
+  "valid_accuracy": 1.0,
+  "initial_train_loss": 0.5145542621612549,
+  "final_train_loss": 0.11067471653223038,
+  "valid_ids": [
+    "P013",
+    "P014",
+    "P015",
+    "P016"
+  ],
+  "actual": [
+    0,
+    0,
+    1,
+    1
+  ],
+  "predicted": [
+    0,
+    0,
+    1,
+    1
+  ]
+}

@@ -1,0 +1,3 @@
+batch_size,iterations,last_batch,samples
+8,30,8,240
+32,8,16,240

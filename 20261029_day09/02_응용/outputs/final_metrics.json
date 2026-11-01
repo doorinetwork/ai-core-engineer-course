@@ -1,0 +1,12 @@
+{
+  "device": "cuda:0",
+  "torch": "2.14.0+cu130",
+  "epochs": 80,
+  "train_rows": 120,
+  "valid_rows": 40,
+  "test_used": false,
+  "initial_train_loss": 0.5658320188522339,
+  "final_train_loss": 0.08984404057264328,
+  "valid_loss": 0.057216621935367584,
+  "valid_accuracy": 1.0
+}

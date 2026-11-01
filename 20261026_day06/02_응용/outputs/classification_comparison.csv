@@ -1,0 +1,4 @@
+﻿model,scale,F1,Precision,Recall,FP,FN
+Dummy,standard,0.0,0.0,0.0,0,6
+Logistic,standard,0.3333333333333333,0.3333333333333333,0.3333333333333333,4,4
+KNN3,standard,0.5454545454545454,0.6,0.5,2,3
