@@ -1,0 +1,10 @@
+﻿source,stage,width,height,dtype,saved,png_equal,process_s
+scene.png,gray,320,240,uint8,True,True,0.01621149992570281
+scene.png,small,160,120,uint8,True,True,0.01621149992570281
+scene.png,edge,160,120,uint8,True,True,0.01621149992570281
+noisy.png,gray,320,240,uint8,True,True,0.0008323000511154532
+noisy.png,small,160,120,uint8,True,True,0.0008323000511154532
+noisy.png,edge,160,120,uint8,True,True,0.0008323000511154532
+objects.png,gray,320,240,uint8,True,True,0.0009325999999418855
+objects.png,small,160,120,uint8,True,True,0.0009325999999418855
+objects.png,edge,160,120,uint8,True,True,0.0009325999999418855
