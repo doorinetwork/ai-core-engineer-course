@@ -162,8 +162,11 @@ strategy balance  params  best_epoch  accuracy  macro_f1  triangle_recall
 
 **설명 질문**: Accuracy는 높고 minority Recall은 0일 수 있는가? weight와 sampler는 무엇을 각각 바꾸는가?
 
-내 설명: ______________________________
-
+내 설명:  
+**Accuracy는 높고 minority Recall은 0일 수 있는가?**  
+가능하다. 다수 클래스가 대부분인 데이터에서 다수 클래스만 예측하면 Accuracy는 높고 소수 Recall은 0이 된다.  
+**weight와 sampler는 무엇을 각각 바꾸는가?**  
+weight는 데이터를 그대로 두고 손실에서 클래스별 비중을 바꾼다. sampler는 손실식을 그대로 두고 배치에 뽑히는 빈도를 바꾼다.  
 
 ## 실습 05 · 평가·오류 이미지 분석 · PPT 57쪽
 
