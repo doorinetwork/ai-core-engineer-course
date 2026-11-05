@@ -93,7 +93,13 @@ python 02_transforms.py
 
 **설명 질문**: 고정 Backbone과 새 Head는 각각 무엇을 학습하는가? 공식 ResNet18과 소형 source의 출처는 같은가?
 
-내 설명: ______________________________
+내 설명:  
+**고정 Backbone과 새 Head는 각각 무엇을 학습하는가?**  
+Backbone은 사전학습된 가중치만 제공하고, 새 Head는 제공되는 256차원의 특징을 어떤 조합이 circle·square·triangle인지 가르는 결정 규칙만 학습한다.
+
+**공식 ResNet18과 소형 source의 출처는 같은가?:** 같지 않다.  
+공식 ResNet18은(ResNet18_Weights.IMAGENET1K_V1) ImageNet-1K 실사 사진으로 학습했고,  
+소형 source는 source_provenance.json에 제시된 이미지들로부터 학습했다. (TinyShapeCNN)  
 
 
 ## 실습 03 · Freeze·Partial Fine-tuning · PPT 35쪽
@@ -123,7 +129,11 @@ strategy balance  params  best_epoch  accuracy  macro_f1  triangle_recall
 
 **설명 질문**: requires_grad=False와 eval()은 어떤 점에서 다른가? partial은 어떤 층을 여는가?
 
-내 설명: ______________________________
+내 설명:  
+**requires_grad=False와 eval()은 어떤 점에서 다른가?**  
+requires_grad=False는 그 파라미터의 기울기 계산·갱신을 끈다. `eval()`은 BatchNorm이 배치 통계 대신 저장된 running 통계를 쓰게 하고 Dropout을 끄는 모드 전환일 뿐, gradient를 끄지 않는다.  
+**partial은 어떤 층을 여는가?**  
+마지막 layer4와 Head를 연다.  
 
 
 ## 실습 04 · 클래스 불균형 대응 · PPT 47쪽
