@@ -253,8 +253,24 @@ strategy balance  params  best_epoch  accuracy  macro_f1  triangle_recall
 
 **설명 질문**: 어떤 입력·설정·seed·매핑을 고정해야 재실행 결과를 비교할 수 있는가? test를 왜 남겨 두는가?
 
-내 설명: ______________________________
+내 설명:  
+**어떤 입력·설정·seed·매핑을 고정해야 재실행 결과를 비교할 수 있는가?**
 
+| 고정 대상 | 이 프로젝트의 값 | 바뀌면 생기는 일 |
+|:--|:--|:--|
+| 입력 데이터 | `data/` train 180·valid 90, 원본 덮어쓰기 없음 | 다른 데이터로 학습·평가 |
+| source 배열 | `source_backbone.npz` (sha256 `fdedd0b6…29f4`, provenance와 일치) | 출발점이 다른 전이학습 |
+| 입력 변환 | Resize(32,32) + ToTensor, Normalize 없음 | 입력 분포 변화 |
+| 클래스 매핑 | `{circle:0, square:1, triangle:2}` | 번호·triangle_recall 의미 변화 |
+| seed·스레드 | `torch.manual_seed(14)`(후보마다 재고정), `set_num_threads(1)` | Head 초기값·연산 순서 변화 |
+| 후보·학습 설정 | 3후보, AdamW lr 0.003·wd 0.0001, 8 epoch, 전체 1배치 | 비교 기준 변화 |
+| 학습 범위·BN | requires_grad(Head / +model[4]), `eval()`로 BN 통계 고정 | 학습 파라미터·BN 통계 변화 |
+| 선택 규칙 | valid 손실(가중치 없음) 최소 epoch | 다른 epoch 선택 |
+| 출력 순서 | `valid.samples` 순서(파일 이름순) | 행 단위 비교 불가 |
+
+**test를 왜 남겨 두는가?**
+
+valid는 이미 **epoch 선택**(손실 최소 epoch)과 **후보 비교**(세 후보 중 어느 것이 나은지)에 쓰였다. 선택에 쓴 데이터의 성능은 그 선택에 맞춰진 값이라 실제보다 좋게 보일 수 있다. 이번에도 head/weight가 valid 1.0000이었지만, 이것이 처음 보는 데이터에서도 1.0이라는 근거는 아니다. test를 학습·추론·임계값 선택 어디에도 쓰지 않고 남겨 두어야, 모든 결정을 끝낸 뒤 **한 번만** 평가해 일반화 성능을 정직하게 보고할 수 있다. 이 프로젝트는 test를 열지 않았다(`test 사용: False`).  
 
 ## 실습 08 · 같은 프로젝트 재현 (PPT 83쪽)
 07번 파일을 다시 실행합니다. 원본 data가 바뀌지 않았는지, metrics·predictions의 행 순서·값이 같은지 확인합니다.
