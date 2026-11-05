@@ -1,0 +1,10 @@
+file,actual,predicted,confidence
+circle_000.png,0,0,0.9341124
+circle_001.png,0,0,0.9501634
+circle_002.png,0,0,0.9643065
+square_000.png,1,1,0.98600113
+square_001.png,1,1,0.9862555
+square_002.png,1,1,0.7630794
+triangle_000.png,2,2,0.884498
+triangle_001.png,2,2,0.97586286
+triangle_002.png,2,2,0.80790555
