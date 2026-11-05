@@ -1,7 +1,5 @@
 # Model Card
 
-> 2026-11-04 실제 실행 결과 기준(`day14_vision_주석/`에서 `python main.py` → `python restore.py`). 노트북 `day14_vision.ipynb` 재실행 결과(`outputs_notebook/`)도 같은 값이다.
-
 ## 데이터·출처
 
 | 항목 | 값 |
@@ -74,23 +72,6 @@
 | 혼동행렬 (행=실제, 열=예측) | [[30,0,0], [0,30,0], [0,0,30]] |
 | 실제 오답 | **0건** |
 | error_*.png, cam_wrong.png | 생성 안 함 (없는 오류를 만들지 않음) |
-| CAM | `cam_correct.png` = valid/circle/circle_000.png, target_class 0 |
-| CAM 관찰 | 원 아래쪽 경계에 반응이 큼 (원인·정답 위치로 해석하지 않음) |
-
-오류 분석은 실습05의 초기 1 epoch 모델로 따로 제출한다(최종 모델과 구분).
-
-| 실습05 초기 모델 오답 | 실제 | 예측 | 예측 확률 | 정답 클래스 확률 |
-|:--|:--|:--|--:|--:|
-| valid/square/square_024.png | square | circle | 0.533 | 0.406 |
-| valid/triangle/triangle_000.png | triangle | circle | 0.494 | 0.445 |
-| valid/triangle/triangle_002.png | triangle | circle | 0.516 | 0.302 |
-| valid/triangle/triangle_013.png | triangle | circle | 0.467 | 0.203 |
-
-| 구분 | 내용 |
-|:--|:--|
-| 관찰 | 오답 4건 모두 circle로 예측, 확률 0.47~0.53으로 낮음 |
-| 가설 | 1 epoch Head가 train 다수 클래스 circle 쪽으로 치우침 (모델 문제) |
-| 다음 확인 | 같은 이미지를 8 epoch·weight·sampler 모델로 재예측 (8 epoch 최종 모델은 오답 0건) |
 
 ## 한계
 
@@ -111,7 +92,7 @@
 | 항목 | 값 |
 |:--|:--|
 | 실행 명령 | `python main.py` → `python restore.py` |
-| 환경 | Linux 컨테이너(4 vCPU), Python 3.13.18, torch 2.10.0+cu128(CUDA 없음, CPU 실행), torchvision 0.25.0, scikit-learn 1.9.1, OpenCV 5.0.0 |
+| 환경 | Windows 11, Python 3.13.16, torch 2.14.0+cu130(CUDA 없음, CPU 실행), torchvision 0.29.0, scikit-learn 1.8.0, OpenCV 4.13.0.92 |
 | Git 변경 기록 | Git 저장소 없음 |
 | 변경 내용 | D07 후보 4개 / D08 선택 키 `(macro_f1, -loss)` / D09 state_dict·class_to_idx·입력 계약·선택 요약 저장 / D10 `load_state_dict(saved["model"])` |
 | best_model.pt | 14,201 bytes, SHA-256 `c966e0ebf447b10e2d7ec9f529ef893a1f1285f2bdb8e482083c27772c473c34` |
