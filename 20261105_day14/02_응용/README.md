@@ -218,8 +218,11 @@ target: square logit: -1.351 mean CAM: 0.1719
 
 **설명 질문**: Heatmap의 target은 무엇인가? 같은 이미지에서 target이 바뀌면 지도가 달라질 수 있는가?
 
-내 설명: ______________________________
-
+내 설명:  
+**Heatmap의 target은 무엇인가?**  
+미분 대상으로 고른 logit의 클래스다.  
+**같은 이미지에서 target이 바뀌면 지도가 달라질 수 있는가?**  
+달라질 수 있다. 채널 가중치가 target logit의 gradient로 정해지므로, 같은 features라도 target마다 다른 채널이 양으로 기여한다. square logit이 음수여도 그 logit을 키우는 쪽으로 반응한 위치가 표시된다.  
 
 ## 실습 07 · 전이학습 프로젝트 · PPT 78쪽
 
