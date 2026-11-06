@@ -1,0 +1,5 @@
+﻿class,confidence,max_iou,result
+0,0.95,0.9025,TP
+0,0.85,0.8162,FP
+1,0.8,1.0,TP
+2,0.4,0.0,FP

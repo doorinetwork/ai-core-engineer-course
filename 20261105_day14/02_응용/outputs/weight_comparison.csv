@@ -1,0 +1,3 @@
+strategy,balance,params,best_epoch,accuracy,macro_f1,triangle_recall,seconds
+head,none,771,8,0.8111111111111111,0.803801562422252,0.5,2.6885568000143394
+head,weight,771,8,1.0,1.0,1.0,0.12003940006252378

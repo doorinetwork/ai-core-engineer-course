@@ -1,0 +1,2 @@
+accuracy,macro_f1,best_epoch,valid_n,source,test_used
+1.0,1.0,8,9,synthetic_source_pretraining,False
