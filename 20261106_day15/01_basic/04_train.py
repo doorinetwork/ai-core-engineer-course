@@ -57,3 +57,30 @@ if __name__ == "__main__":
     # model.task : 'detect' / model.names : {0:'square', 1:'circle', 2:'triangle'} / model.device : cpu
     print("task:", model.task, "names:", model.names, "device:", model.device)
     print("학습 결과:", BASE/"p04_runs/smoke")
+
+'''
+Starting training for 1 epochs...
+Closing dataloader mosaic
+
+      Epoch    GPU_mem   box_loss   cls_loss    l1_loss  Instances       Size
+        1/1         0G      3.105      4.262    0.04568         12        160: 100% ━━━━━━━━━━━━ 3/3 2.2it/s 1.3s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 1/1 11.8it/s 0.1s
+                   all          6         18          0          0          0          0
+
+1 epochs completed in 0.001 hours.
+Optimizer stripped from C:\workspace\practice_assignment\20261106\01_basic\p04_runs\smoke\weights\last.pt, 5.3MB
+Optimizer stripped from C:\workspace\practice_assignment\20261106\01_basic\p04_runs\smoke\weights\best.pt, 5.3MB
+
+Validating C:\workspace\practice_assignment\20261106\01_basic\p04_runs\smoke\weights\best.pt...
+Ultralytics 8.4.203  Python-3.13.16 torch-2.14.0+cu130 CPU (Intel Core Ultra 9 275HX)
+YOLO26n summary (fused): 120 layers, 2,375,421 parameters, 0 gradients, 5.3 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 1/1 20.2it/s 0.0s
+                   all          6         18          0          0          0          0
+                square          6          6          0          0          0          0
+                circle          6          6          0          0          0          0
+              triangle          6          6          0          0          0          0
+Speed: 0.0ms preprocess, 6.3ms inference, 0.0ms loss, 0.4ms postprocess per image
+Results saved to C:\workspace\practice_assignment\20261106\01_basic\p04_runs\smoke
+task: detect names: {0: 'square', 1: 'circle', 2: 'triangle'} device: cpu
+학습 결과: C:\workspace\practice_assignment\20261106\01_basic\p04_runs\smoke
+'''
