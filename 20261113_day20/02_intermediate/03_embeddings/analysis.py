@@ -3,8 +3,8 @@
 - s_ab, s_ac     : A-B 약 0.9701, A-C -1.0
 - ranked         : D 추가 후 A 기준 유사도 내림차순 (B > D > C)
 - shapes         : 벡터 하나 (2,), 행렬 (4,2)
-- token_shape    : (심화) Token Embedding (2,4,4)
-- pooled_shape   : (심화) 평균 Pooling 결과 (2,4)
+- token_shape    : Token Embedding (2,4,4)
+- pooled_shape   : 평균 Pooling 결과 (2,4)
 - 결과: outputs/vectors.png, outputs/cosine_report.json
 """
 # ============================================================
