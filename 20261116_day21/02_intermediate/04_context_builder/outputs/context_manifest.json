@@ -1,0 +1,27 @@
+{
+  "context_version": "knowledge_v1",
+  "included_ids": [
+    102
+  ],
+  "excluded": [
+    {
+      "id": 101,
+      "reason": "이번 서버 실행 질문에서 선택하지 않음"
+    },
+    {
+      "id": 103,
+      "reason": "이번 서버 실행 질문에서 선택하지 않음"
+    }
+  ],
+  "budget": {
+    "source": "hypothetical_budget_not_model_measurement",
+    "parts": {
+      "window": 8192,
+      "instructions_question": 800,
+      "examples": 600,
+      "output_reserve": 1600,
+      "margin": 256
+    },
+    "available_for_context": 4936
+  }
+}

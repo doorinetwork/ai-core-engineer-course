@@ -1,0 +1,7 @@
+{
+  "permissions": "수업용 가상 지식만 사용",
+  "validity": "knowledge_v1 고정",
+  "relevance": "서버 실행 위치는 102",
+  "order": "요청한 selected_ids의 첫 순서",
+  "excluded_when_over_budget": "중복·무관 정보부터 검토, 실제 tokenizer로 재측정 필요"
+}
