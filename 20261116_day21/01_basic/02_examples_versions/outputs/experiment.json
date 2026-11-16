@@ -1,0 +1,14 @@
+{
+  "experiment": "examples_design_only",
+  "base_version": "examples_zero_v1",
+  "new_version": "examples_few_v1",
+  "changed": "예제 유무",
+  "hypothesis": "정상과 정보 부족의 출력 조합을 잘 따를지 관찰한다.",
+  "fixed": [
+    "질문",
+    "knowledge_v1",
+    "answer_schema_v1",
+    "근거 규칙"
+  ],
+  "source_mode": "design_only"
+}
