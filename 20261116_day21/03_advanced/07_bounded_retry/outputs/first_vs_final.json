@@ -1,0 +1,30 @@
+[
+  {
+    "scenario": "repair_success",
+    "first_error": "json_error",
+    "attempts": 2,
+    "final_auto_ok": true,
+    "source_mode": "fixture"
+  },
+  {
+    "scenario": "repair_failure",
+    "first_error": "json_error",
+    "attempts": 2,
+    "final_auto_ok": false,
+    "source_mode": "fixture"
+  },
+  {
+    "scenario": "rule_stop",
+    "first_error": "unknown_source",
+    "attempts": 1,
+    "final_auto_ok": false,
+    "source_mode": "fixture"
+  },
+  {
+    "scenario": "insufficient_stop",
+    "first_error": null,
+    "attempts": 1,
+    "final_auto_ok": true,
+    "source_mode": "fixture"
+  }
+]
