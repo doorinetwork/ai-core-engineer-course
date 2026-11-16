@@ -1,0 +1,28 @@
+[
+  {
+    "case_id": "C01",
+    "required": [
+      "보관 위치"
+    ],
+    "missing": [],
+    "conflicts": [],
+    "status": "answered",
+    "source_ids": [
+      101
+    ],
+    "basis": "teacher_authored_fact_card"
+  },
+  {
+    "case_id": "C02",
+    "required": [
+      "보관 기간"
+    ],
+    "missing": [
+      "보관 기간"
+    ],
+    "conflicts": [],
+    "status": "insufficient_context",
+    "source_ids": [],
+    "basis": "teacher_authored_fact_card"
+  }
+]
