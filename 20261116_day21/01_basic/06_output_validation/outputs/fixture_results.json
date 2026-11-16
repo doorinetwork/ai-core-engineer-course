@@ -1,0 +1,210 @@
+[
+  {
+    "fixture_id": "valid_answer",
+    "source_mode": "fixture",
+    "error": null,
+    "expected_error": null,
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "valid_insufficient",
+    "source_mode": "fixture",
+    "error": null,
+    "expected_error": null,
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "broken_json",
+    "source_mode": "fixture",
+    "error": "json_error",
+    "expected_error": "json_error",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "missing_fields",
+    "source_mode": "fixture",
+    "error": "schema_error",
+    "expected_error": "schema_error",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "string_id",
+    "source_mode": "fixture",
+    "error": "schema_error",
+    "expected_error": "schema_error",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "bool_id",
+    "source_mode": "fixture",
+    "error": "schema_error",
+    "expected_error": "schema_error",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "zero_id",
+    "source_mode": "fixture",
+    "error": "schema_error",
+    "expected_error": "schema_error",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "extra_field",
+    "source_mode": "fixture",
+    "error": "schema_error",
+    "expected_error": "schema_error",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "too_long",
+    "source_mode": "fixture",
+    "error": "schema_error",
+    "expected_error": "schema_error",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "unknown_source",
+    "source_mode": "fixture",
+    "error": "unknown_source",
+    "expected_error": "unknown_source",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "example_leak",
+    "source_mode": "fixture",
+    "error": "unknown_source",
+    "expected_error": "unknown_source",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "outside_context",
+    "source_mode": "fixture",
+    "error": "unknown_source",
+    "expected_error": "unknown_source",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "duplicate_source",
+    "source_mode": "fixture",
+    "error": "duplicate_source",
+    "expected_error": "duplicate_source",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "answered_without_source",
+    "source_mode": "fixture",
+    "error": "status_rule",
+    "expected_error": "status_rule",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "contradictory_state",
+    "source_mode": "fixture",
+    "error": "status_rule",
+    "expected_error": "status_rule",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "insufficient_with_source",
+    "source_mode": "fixture",
+    "error": "status_rule",
+    "expected_error": "status_rule",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "insufficient_without_missing",
+    "source_mode": "fixture",
+    "error": "status_rule",
+    "expected_error": "status_rule",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "wrong_insufficient_text",
+    "source_mode": "fixture",
+    "error": "status_rule",
+    "expected_error": "status_rule",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "blank_answer",
+    "source_mode": "fixture",
+    "error": "blank_answer",
+    "expected_error": "blank_answer",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "semantic_counterexample",
+    "source_mode": "fixture",
+    "error": null,
+    "expected_error": null,
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "over_abstain",
+    "source_mode": "fixture",
+    "error": null,
+    "expected_error": null,
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "code_fence",
+    "source_mode": "fixture",
+    "error": "json_error",
+    "expected_error": "json_error",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "duplicate_key",
+    "source_mode": "fixture",
+    "error": "json_error",
+    "expected_error": "json_error",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "nonstandard_number",
+    "source_mode": "fixture",
+    "error": "json_error",
+    "expected_error": "json_error",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "array_root",
+    "source_mode": "fixture",
+    "error": "schema_error",
+    "expected_error": "schema_error",
+    "matches_expected": true,
+    "evidence_ok": null
+  },
+  {
+    "fixture_id": "float_id",
+    "source_mode": "fixture",
+    "error": "schema_error",
+    "expected_error": "schema_error",
+    "matches_expected": true,
+    "evidence_ok": null
+  }
+]
