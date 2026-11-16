@@ -1,0 +1,16 @@
+{
+  "source_mode": "fixture",
+  "calls": [
+    2,
+    2,
+    1,
+    1
+  ],
+  "auto_accepted": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "actual_model_recovery_rate": null
+}
