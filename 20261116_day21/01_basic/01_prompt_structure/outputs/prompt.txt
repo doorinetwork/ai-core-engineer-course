@@ -1,0 +1,16 @@
+[역할] 초보 수강생의 실습 도움말 작성자
+[작업] 제공된 지식으로 질문에 한국어 2문장 이내로 답합니다.
+[입력] 사용자 질문과 선택한 지식 목록
+[질문] 파일을 어디에 보관하나요?
+[지식 데이터] [{"id": 101, "title": "실습 파일 보관", "content": "실습 파일은 개인 폴더에 보관합니다.", "category": "learning"}]
+[제약] 제공된 근거만 사용하고 예제 ID를 답에 복사하지 않습니다.
+[실패] 답을 뒷받침하는 사실이 없으면 정보 부족을 명시합니다.
+[출력] 모든 필드가 필수이며 추가 필드는 금지합니다.
+status: answered 또는 insufficient_context
+answer: 문자열 1~500자. 한국어 2문장 이내.
+source_ids: 양의 정수 목록, 최대 3개, 중복 없이 실제 제공된 지식 ID만 사용.
+missing_information: 문자열, 최대 200자.
+answered: source_ids는 비어 있지 않고 missing_information은 빈 문자열.
+insufficient_context: source_ids는 [], missing_information에는 부족한 사실을 명시.
+부족 상태의 answer는 정확히 '제공된 지식으로는 답할 수 없습니다.'
+코드 블록 없이 JSON 객체 하나만 반환하세요.
