@@ -1,0 +1,7 @@
+{
+  "source_mode": "fixture",
+  "auto_ok": true,
+  "human_expected": "근거 부적합",
+  "reason": "101은 보관 위치만 설명한다. 서버 실행 위치는 102에서 확인한다.",
+  "model_performance_claim": false
+}

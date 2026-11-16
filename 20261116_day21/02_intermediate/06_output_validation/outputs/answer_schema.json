@@ -1,0 +1,41 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "status": {
+      "enum": [
+        "answered",
+        "insufficient_context"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "answer": {
+      "maxLength": 500,
+      "minLength": 1,
+      "title": "Answer",
+      "type": "string"
+    },
+    "source_ids": {
+      "items": {
+        "exclusiveMinimum": 0,
+        "type": "integer"
+      },
+      "maxItems": 3,
+      "title": "Source Ids",
+      "type": "array"
+    },
+    "missing_information": {
+      "maxLength": 200,
+      "title": "Missing Information",
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "answer",
+    "source_ids",
+    "missing_information"
+  ],
+  "title": "KnowledgeAnswer",
+  "type": "object"
+}
