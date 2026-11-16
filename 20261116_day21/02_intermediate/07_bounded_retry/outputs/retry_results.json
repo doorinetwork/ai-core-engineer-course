@@ -1,0 +1,81 @@
+{
+  "source_mode": "fixture",
+  "results": [
+    {
+      "scenario": "repair_success",
+      "source_mode": "fixture",
+      "calls": 2,
+      "auto_accepted": true,
+      "evidence_ok": null,
+      "history": [
+        {
+          "attempt": 1,
+          "error": "json_error",
+          "raw_text": "{\"status\":",
+          "prompt_sha256": "143f506df385d088c699ffe31b718ffccb84838ab2589f4567100097190b3c2a"
+        },
+        {
+          "attempt": 2,
+          "error": null,
+          "raw_text": "{\"status\": \"answered\", \"answer\": \"개인 폴더에 보관합니다.\", \"source_ids\": [101], \"missing_information\": \"\"}",
+          "prompt_sha256": "771f5c2e14c5f4bb2c152516d1f9a86ca982bbd3501d3bf450129f38d99d5c68"
+        }
+      ],
+      "actual_model_recovery_rate": null
+    },
+    {
+      "scenario": "repair_failure",
+      "source_mode": "fixture",
+      "calls": 2,
+      "auto_accepted": false,
+      "evidence_ok": null,
+      "history": [
+        {
+          "attempt": 1,
+          "error": "json_error",
+          "raw_text": "{\"status\":",
+          "prompt_sha256": "143f506df385d088c699ffe31b718ffccb84838ab2589f4567100097190b3c2a"
+        },
+        {
+          "attempt": 2,
+          "error": "json_error",
+          "raw_text": "{\"status\":",
+          "prompt_sha256": "771f5c2e14c5f4bb2c152516d1f9a86ca982bbd3501d3bf450129f38d99d5c68"
+        }
+      ],
+      "actual_model_recovery_rate": null
+    },
+    {
+      "scenario": "rule_stop",
+      "source_mode": "fixture",
+      "calls": 1,
+      "auto_accepted": false,
+      "evidence_ok": null,
+      "history": [
+        {
+          "attempt": 1,
+          "error": "unknown_source",
+          "raw_text": "{\"status\": \"answered\", \"answer\": \"개인 폴더에 보관합니다.\", \"source_ids\": [999], \"missing_information\": \"\"}",
+          "prompt_sha256": "143f506df385d088c699ffe31b718ffccb84838ab2589f4567100097190b3c2a"
+        }
+      ],
+      "actual_model_recovery_rate": null
+    },
+    {
+      "scenario": "insufficient_stop",
+      "source_mode": "fixture",
+      "calls": 1,
+      "auto_accepted": true,
+      "evidence_ok": null,
+      "history": [
+        {
+          "attempt": 1,
+          "error": null,
+          "raw_text": "{\"status\": \"insufficient_context\", \"answer\": \"제공된 지식으로는 답할 수 없습니다.\", \"source_ids\": [], \"missing_information\": \"보관 기간\"}",
+          "prompt_sha256": "143f506df385d088c699ffe31b718ffccb84838ab2589f4567100097190b3c2a"
+        }
+      ],
+      "actual_model_recovery_rate": null
+    }
+  ]
+}
