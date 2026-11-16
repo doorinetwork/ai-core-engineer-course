@@ -1,0 +1,41 @@
+{
+  "version": "examples_few_v2",
+  "changed": "정상 예제 질문 표현 1개",
+  "hypothesis": "의미가 같은 표현에도 출력 계약을 유지하는지 관찰",
+  "examples": [
+    {
+      "question": "대여 장소를 알려 주세요.",
+      "context": [
+        {
+          "id": 901,
+          "content": "대여 장소는 안내 데스크입니다."
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "안내 데스크에서 대여합니다.",
+        "source_ids": [
+          901
+        ],
+        "missing_information": ""
+      }
+    },
+    {
+      "question": "대여료는 얼마인가요?",
+      "context": [
+        {
+          "id": 901,
+          "content": "대여 장소는 안내 데스크입니다."
+        }
+      ],
+      "answer": {
+        "status": "insufficient_context",
+        "answer": "제공된 지식으로는 답할 수 없습니다.",
+        "source_ids": [],
+        "missing_information": "대여료"
+      }
+    }
+  ],
+  "fixed_context": "knowledge_v1",
+  "fixed_schema": "answer_schema_v1"
+}
