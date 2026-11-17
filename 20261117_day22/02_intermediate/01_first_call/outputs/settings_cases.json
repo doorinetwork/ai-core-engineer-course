@@ -1,0 +1,12 @@
+[
+  {
+    "case": "missing_key",
+    "where": "local_settings",
+    "new_api_send_count": 0
+  },
+  {
+    "case": "model_denied",
+    "where": "provider_permission",
+    "simulated_send_count": 1
+  }
+]
