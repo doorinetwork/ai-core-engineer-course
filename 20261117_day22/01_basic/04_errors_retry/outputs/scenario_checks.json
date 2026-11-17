@@ -1,0 +1,101 @@
+[
+  {
+    "case": "auth",
+    "actual": "auth_error",
+    "expected": {
+      "simulated_send_count": 1,
+      "run_status": "auth_error"
+    },
+    "passed": true
+  },
+  {
+    "case": "quota",
+    "actual": "quota_error",
+    "expected": {
+      "simulated_send_count": 1,
+      "run_status": "quota_error"
+    },
+    "passed": true
+  },
+  {
+    "case": "unknown_429",
+    "actual": "unknown_429",
+    "expected": {
+      "simulated_send_count": 1,
+      "run_status": "unknown_429"
+    },
+    "passed": true
+  },
+  {
+    "case": "rate_then_ok",
+    "actual": "validated",
+    "expected": {
+      "simulated_send_count": 2,
+      "run_status": "validated"
+    },
+    "passed": true
+  },
+  {
+    "case": "server_twice",
+    "actual": "server_error",
+    "expected": {
+      "simulated_send_count": 2,
+      "run_status": "server_error"
+    },
+    "passed": true
+  },
+  {
+    "case": "timeout",
+    "actual": "timeout",
+    "expected": {
+      "simulated_send_count": 1,
+      "run_status": "timeout"
+    },
+    "passed": true
+  },
+  {
+    "case": "retry_after_long",
+    "actual": "deferred",
+    "expected": {
+      "simulated_send_count": 1,
+      "run_status": "deferred"
+    },
+    "passed": true
+  },
+  {
+    "case": "format_once",
+    "actual": "validated",
+    "expected": {
+      "simulated_send_count": 2,
+      "run_status": "validated"
+    },
+    "passed": true
+  },
+  {
+    "case": "shared_four",
+    "actual": "validated",
+    "expected": {
+      "simulated_send_count": 4,
+      "run_status": "validated"
+    },
+    "passed": true
+  },
+  {
+    "case": "refused",
+    "actual": "refused",
+    "expected": {
+      "simulated_send_count": 1,
+      "run_status": "refused"
+    },
+    "passed": true
+  },
+  {
+    "case": "incomplete",
+    "actual": "incomplete",
+    "expected": {
+      "simulated_send_count": 1,
+      "run_status": "incomplete"
+    },
+    "passed": true
+  }
+]
