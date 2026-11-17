@@ -1,0 +1,14 @@
+[
+  {
+    "source_mode": "api_live",
+    "first_text_ms": null,
+    "request_ms": 1705.633,
+    "e2e_ms": 2216.777
+  },
+  {
+    "source_mode": "api_live",
+    "first_text_ms": 881.5659999963827,
+    "request_ms": 1109.513,
+    "e2e_ms": 1120.743
+  }
+]
