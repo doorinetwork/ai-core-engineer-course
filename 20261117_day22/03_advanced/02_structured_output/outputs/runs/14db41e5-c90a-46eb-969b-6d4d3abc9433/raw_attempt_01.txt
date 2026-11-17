@@ -1,0 +1,1 @@
+{"status":"insufficient_context","answer":"제공된 지식으로는 답할 수 없습니다.","source_ids":[],"missing_information":"파일 보관 기간에 대한 정보가 없습니다."}
