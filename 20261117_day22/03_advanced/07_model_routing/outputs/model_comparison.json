@@ -1,0 +1,52 @@
+[
+  {
+    "case_id": "H01",
+    "source_mode": "api_live",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "route_reason": "explicit_mode:fast",
+    "run_status": "validated",
+    "answer_object": {
+      "status": "answered",
+      "answer": "오류 질문에는 오류 메시지와 시도한 작업을 함께 적습니다.",
+      "source_ids": [
+        103
+      ],
+      "missing_information": ""
+    },
+    "evidence_ok": null,
+    "usage": {
+      "input_tokens": 424,
+      "output_tokens": 42,
+      "total_tokens": 466,
+      "cached_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "request_ms": 1736.971,
+    "estimated_usd": "0.000507"
+  },
+  {
+    "case_id": "H01",
+    "source_mode": "api_live",
+    "model": "gpt-5.4-2026-03-05",
+    "route_reason": "explicit_mode:quality",
+    "run_status": "validated",
+    "answer_object": {
+      "status": "answered",
+      "answer": "오류 질문에는 오류 메시지와 내가 시도한 작업을 함께 적으면 됩니다.",
+      "source_ids": [
+        103
+      ],
+      "missing_information": ""
+    },
+    "evidence_ok": null,
+    "usage": {
+      "input_tokens": 424,
+      "output_tokens": 44,
+      "total_tokens": 468,
+      "cached_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "request_ms": 1555.97,
+    "estimated_usd": "0.00172"
+  }
+]
