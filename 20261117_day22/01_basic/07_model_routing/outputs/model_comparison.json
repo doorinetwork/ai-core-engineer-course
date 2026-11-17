@@ -1,0 +1,27 @@
+[
+  {
+    "case_id": "H01",
+    "source_mode": "api_live",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "route_reason": "explicit_mode:fast",
+    "run_status": "validated",
+    "answer_object": {
+      "status": "answered",
+      "answer": "오류 질문에는 오류 메시지와 함께 어떤 작업을 시도했는지 적습니다.",
+      "source_ids": [
+        103
+      ],
+      "missing_information": ""
+    },
+    "evidence_ok": null,
+    "usage": {
+      "input_tokens": 424,
+      "output_tokens": 45,
+      "total_tokens": 469,
+      "cached_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "request_ms": 3462.309,
+    "estimated_usd": "0.0005205"
+  }
+]
