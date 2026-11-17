@@ -1,0 +1,95 @@
+{
+  "run_id": "b95bda54-8f91-45a9-ac9e-6a01cc66dccb",
+  "case_id": "FIRST",
+  "source_mode": "api_live",
+  "run_status": "completed_text",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "request": {
+    "model": "gpt-5.4-mini-2026-03-17",
+    "instructions": "한국어 한 문장으로 답하세요.",
+    "input": "API의 역할을 쉽게 설명해 주세요.",
+    "reasoning": {
+      "effort": "none"
+    },
+    "max_output_tokens": 1200,
+    "store": false,
+    "service_tier": "default"
+  },
+  "provided_ids": [],
+  "versions": {
+    "prompt_hash": "6a305401a2c168eab4fb2976e3c5712ff92c463ae0c7dd5a975d2384963dd732",
+    "context_hash": "58ff665d3a9ce9c22ee891b8154436ac4b3e29979434e51c2efe0dafd9f21595",
+    "wire_schema_hash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+    "validator_version": "day21-v1"
+  },
+  "attempts": [
+    {
+      "source_mode": "api_live",
+      "generation_no": 1,
+      "send_attempt": 1,
+      "transport_attempt": 1,
+      "api_status": "completed",
+      "usage": {
+        "input_tokens": 28,
+        "output_tokens": 32,
+        "total_tokens": 60,
+        "cached_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "response_id": "resp_036fc544ef3471fb016afbac01d49087d2b83b922d9fc8a098",
+      "request_id": "req_272a88b9fe6941a39463d1949dafd431",
+      "request_ms": 2332.189,
+      "first_text_ms": null,
+      "raw": "API는 서로 다른 프로그램이 정해진 규칙으로 정보를 주고받게 해 주는 “중간 다리”입니다.",
+      "partial_text": null,
+      "estimated_usd": "0.000165",
+      "cost_status": "estimated",
+      "wait_s": null,
+      "error": null,
+      "validation_error": null,
+      "request_hash": "73885c5279e4d63a89ae49553d5bc6b7b372b063393910328728412faaf98f71",
+      "is_format_repair": false,
+      "actual_model": "gpt-5.4-mini-2026-03-17",
+      "response_service_tier": "default",
+      "price_version": "classroom-standard-text-2026-11-12",
+      "price_checked_at": "2026-11-12",
+      "currency": "USD",
+      "service_tier": "default",
+      "validate_ms": 0.014
+    }
+  ],
+  "answer_object": null,
+  "raw": "API는 서로 다른 프로그램이 정해진 규칙으로 정보를 주고받게 해 주는 “중간 다리”입니다.",
+  "evidence_ok": null,
+  "environment": {
+    "python": "3.13.16",
+    "platform": "Windows",
+    "openai": "3.52.0",
+    "pydantic": "2.13.5",
+    "python-dotenv": "1.2.4",
+    "httpx": "0.28.1"
+  },
+  "new_api_send_count": 1,
+  "simulated_send_count": 0,
+  "measurement_origin": "client_observed",
+  "started_at": "2026-11-17T01:21:06.325118+00:00",
+  "validation_error": null,
+  "request_ms": 2332.189,
+  "first_text_ms": null,
+  "e2e_ms": 2834.529,
+  "usage": {
+    "input_tokens": 28,
+    "output_tokens": 32,
+    "total_tokens": 60,
+    "cached_tokens": 0,
+    "reasoning_tokens": 0
+  },
+  "known_estimated_usd": "0.000165",
+  "unknown_cost_attempts": 0,
+  "total_estimated_usd": "0.000165",
+  "estimated_usd": "0.000165",
+  "scope": "classroom-demo",
+  "route_reason": "explicit_mode:fast",
+  "selected_knowledge": [],
+  "preparation_ms": 6.804
+}
