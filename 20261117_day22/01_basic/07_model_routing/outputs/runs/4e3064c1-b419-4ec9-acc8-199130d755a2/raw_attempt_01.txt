@@ -1,0 +1,1 @@
+{"status":"answered","answer":"오류 질문에는 오류 메시지와 시도한 작업을 함께 적으면 됩니다.","source_ids":[103],"missing_information":""}
