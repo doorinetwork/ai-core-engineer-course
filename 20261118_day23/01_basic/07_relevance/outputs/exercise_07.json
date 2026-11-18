@@ -1,0 +1,112 @@
+{
+  "exercise": 7,
+  "level": 1,
+  "source_mode": "pgvector_exact",
+  "review_rows": [
+    {
+      "case_id": "server",
+      "query": "서버는 어디에서 실행하나요?",
+      "retrieved_id": 102,
+      "content": "프로젝트 폴더에서 서버를 실행합니다.",
+      "distance": 0.114599,
+      "teaching_reference": "관련",
+      "human_reviewed": false,
+      "source_version": "knowledge_v1"
+    },
+    {
+      "case_id": "server",
+      "query": "서버는 어디에서 실행하나요?",
+      "retrieved_id": 103,
+      "content": "오류 메시지와 시도한 작업을 함께 적습니다.",
+      "distance": 0.195967,
+      "teaching_reference": "무관",
+      "human_reviewed": false,
+      "source_version": "knowledge_v1"
+    },
+    {
+      "case_id": "server",
+      "query": "서버는 어디에서 실행하나요?",
+      "retrieved_id": 107,
+      "content": "필요한 Python 패키지는 기존 가상환경에 추가합니다.",
+      "distance": 0.19779,
+      "teaching_reference": "무관",
+      "human_reviewed": false,
+      "source_version": "knowledge_search_v2"
+    },
+    {
+      "case_id": "retention",
+      "query": "실습 파일은 몇 년 동안 보관하나요?",
+      "retrieved_id": 101,
+      "content": "실습 파일은 개인 폴더에 보관합니다.",
+      "distance": 0.099375,
+      "teaching_reference": "부분 관련",
+      "human_reviewed": false,
+      "source_version": "knowledge_v1"
+    },
+    {
+      "case_id": "retention",
+      "query": "실습 파일은 몇 년 동안 보관하나요?",
+      "retrieved_id": 103,
+      "content": "오류 메시지와 시도한 작업을 함께 적습니다.",
+      "distance": 0.202864,
+      "teaching_reference": "무관",
+      "human_reviewed": false,
+      "source_version": "knowledge_v1"
+    },
+    {
+      "case_id": "retention",
+      "query": "실습 파일은 몇 년 동안 보관하나요?",
+      "retrieved_id": 104,
+      "content": "녹화가 제공되는 수업은 강의실 안내 페이지에서 확인합니다.",
+      "distance": 0.204483,
+      "teaching_reference": "무관",
+      "human_reviewed": false,
+      "source_version": "knowledge_search_v2"
+    },
+    {
+      "case_id": "error",
+      "query": "오류를 질문할 때 무엇을 적어야 하나요?",
+      "retrieved_id": 103,
+      "content": "오류 메시지와 시도한 작업을 함께 적습니다.",
+      "distance": 0.127729,
+      "teaching_reference": "관련",
+      "human_reviewed": false,
+      "source_version": "knowledge_v1"
+    },
+    {
+      "case_id": "error",
+      "query": "오류를 질문할 때 무엇을 적어야 하나요?",
+      "retrieved_id": 108,
+      "content": "문제를 보고할 때 재현한 단계와 오류 메시지를 기록합니다.",
+      "distance": 0.136703,
+      "teaching_reference": "관련",
+      "human_reviewed": false,
+      "source_version": "knowledge_search_v2"
+    },
+    {
+      "case_id": "error",
+      "query": "오류를 질문할 때 무엇을 적어야 하나요?",
+      "retrieved_id": 109,
+      "content": "검색된 자료는 원문과 실제 질문의 요구를 대조합니다.",
+      "distance": 0.16784,
+      "teaching_reference": "무관",
+      "human_reviewed": false,
+      "source_version": "knowledge_search_v2"
+    }
+  ],
+  "search_states": [
+    {
+      "case_id": "server",
+      "state": "candidates"
+    },
+    {
+      "case_id": "retention",
+      "state": "candidates"
+    },
+    {
+      "case_id": "error",
+      "state": "candidates"
+    }
+  ],
+  "human_evidence_ok": null
+}
