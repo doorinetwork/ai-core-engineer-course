@@ -1,0 +1,88 @@
+{
+  "exercise": 1,
+  "level": 2,
+  "source_mode": "local_snapshot",
+  "selected_ids": [
+    101,
+    102,
+    103
+  ],
+  "example_passage": "passage: 서버 실행 프로젝트 폴더에서 서버를 실행합니다.",
+  "total_mapped": 9,
+  "mapping": [
+    {
+      "id": 101,
+      "title": "실습 파일 보관",
+      "content": "실습 파일은 개인 폴더에 보관합니다.",
+      "category": "course",
+      "source_version": "knowledge_v1",
+      "passage_input": "passage: 실습 파일 보관 실습 파일은 개인 폴더에 보관합니다."
+    },
+    {
+      "id": 102,
+      "title": "서버 실행",
+      "content": "프로젝트 폴더에서 서버를 실행합니다.",
+      "category": "development",
+      "source_version": "knowledge_v1",
+      "passage_input": "passage: 서버 실행 프로젝트 폴더에서 서버를 실행합니다."
+    },
+    {
+      "id": 103,
+      "title": "질문 작성",
+      "content": "오류 메시지와 시도한 작업을 함께 적습니다.",
+      "category": "support",
+      "source_version": "knowledge_v1",
+      "passage_input": "passage: 질문 작성 오류 메시지와 시도한 작업을 함께 적습니다."
+    },
+    {
+      "id": 104,
+      "title": "수업 녹화",
+      "content": "녹화가 제공되는 수업은 강의실 안내 페이지에서 확인합니다.",
+      "category": "course",
+      "source_version": "knowledge_search_v2",
+      "passage_input": "passage: 수업 녹화 녹화가 제공되는 수업은 강의실 안내 페이지에서 확인합니다."
+    },
+    {
+      "id": 105,
+      "title": "과제 제출",
+      "content": "과제 제출 위치는 해당 과제의 안내 페이지에서 확인합니다.",
+      "category": "course",
+      "source_version": "knowledge_search_v2",
+      "passage_input": "passage: 과제 제출 과제 제출 위치는 해당 과제의 안내 페이지에서 확인합니다."
+    },
+    {
+      "id": 106,
+      "title": "데이터베이스 연결",
+      "content": "PostgreSQL 접속 정보는 로컬 설정 파일에서 읽습니다.",
+      "category": "development",
+      "source_version": "knowledge_search_v2",
+      "passage_input": "passage: 데이터베이스 연결 PostgreSQL 접속 정보는 로컬 설정 파일에서 읽습니다."
+    },
+    {
+      "id": 107,
+      "title": "패키지 설치",
+      "content": "필요한 Python 패키지는 기존 가상환경에 추가합니다.",
+      "category": "development",
+      "source_version": "knowledge_search_v2",
+      "passage_input": "passage: 패키지 설치 필요한 Python 패키지는 기존 가상환경에 추가합니다."
+    },
+    {
+      "id": 108,
+      "title": "문제 해결 안내",
+      "content": "문제를 보고할 때 재현한 단계와 오류 메시지를 기록합니다.",
+      "category": "support",
+      "source_version": "knowledge_search_v2",
+      "passage_input": "passage: 문제 해결 안내 문제를 보고할 때 재현한 단계와 오류 메시지를 기록합니다."
+    },
+    {
+      "id": 109,
+      "title": "결과 검토",
+      "content": "검색된 자료는 원문과 실제 질문의 요구를 대조합니다.",
+      "category": "support",
+      "source_version": "knowledge_search_v2",
+      "passage_input": "passage: 결과 검토 검색된 자료는 원문과 실제 질문의 요구를 대조합니다."
+    }
+  ],
+  "unique_ids": 9,
+  "all_fields_valid": true
+}
