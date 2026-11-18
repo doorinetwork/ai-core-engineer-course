@@ -1,0 +1,16 @@
+{
+  "exercise": 3,
+  "level": 1,
+  "source_mode": "simulated",
+  "model_id": "SIMULATED_2D_PADDED_TO_384_NOT_E5",
+  "document_shape": [
+    3,
+    384
+  ],
+  "query_shape": [
+    1,
+    384
+  ],
+  "example_passage": "passage: 실습 파일 보관 실습 파일은 개인 폴더에 보관합니다.",
+  "example_query": "query: 서버는 어디에서 실행하나요?"
+}
