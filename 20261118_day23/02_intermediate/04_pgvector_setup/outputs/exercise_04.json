@@ -1,0 +1,24 @@
+{
+  "exercise": 4,
+  "level": 2,
+  "source_mode": "pgvector_live",
+  "sql_for_pgadmin": {
+    "server": "SELECT version(); SELECT current_database(), current_user;",
+    "extension": "SELECT name, default_version, installed_version FROM pg_available_extensions WHERE name='vector';",
+    "distance": "SELECT '[1,0,0]'::vector <=> '[0,1,0]'::vector AS cosine_distance;"
+  },
+  "db_check": {
+    "server_version": "PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35229, 64-bit",
+    "database": "knowledge_lab",
+    "extension": {
+      "state": "installed",
+      "version": "0.8.7"
+    },
+    "distance_probe": 1.0
+  },
+  "illustrated_extension_state": {
+    "state": "available_not_installed",
+    "version": null
+  },
+  "example_error_stage": "compile"
+}
