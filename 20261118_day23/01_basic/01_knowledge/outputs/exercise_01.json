@@ -1,0 +1,38 @@
+{
+  "exercise": 1,
+  "level": 1,
+  "source_mode": "local_snapshot",
+  "selected_ids": [
+    101,
+    102,
+    103
+  ],
+  "example_passage": "passage: 서버 실행 프로젝트 폴더에서 서버를 실행합니다.",
+  "total_mapped": 3,
+  "mapping": [
+    {
+      "id": 101,
+      "title": "실습 파일 보관",
+      "content": "실습 파일은 개인 폴더에 보관합니다.",
+      "category": "course",
+      "source_version": "knowledge_v1",
+      "passage_input": "passage: 실습 파일 보관 실습 파일은 개인 폴더에 보관합니다."
+    },
+    {
+      "id": 102,
+      "title": "서버 실행",
+      "content": "프로젝트 폴더에서 서버를 실행합니다.",
+      "category": "development",
+      "source_version": "knowledge_v1",
+      "passage_input": "passage: 서버 실행 프로젝트 폴더에서 서버를 실행합니다."
+    },
+    {
+      "id": 103,
+      "title": "질문 작성",
+      "content": "오류 메시지와 시도한 작업을 함께 적습니다.",
+      "category": "support",
+      "source_version": "knowledge_v1",
+      "passage_input": "passage: 질문 작성 오류 메시지와 시도한 작업을 함께 적습니다."
+    }
+  ]
+}
