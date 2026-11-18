@@ -1,0 +1,28 @@
+{
+  "exercise": 5,
+  "level": 1,
+  "source_mode": "pgvector_exact",
+  "table": "day23_search_docs",
+  "model": "intfloat/multilingual-e5-small",
+  "prepared_count": 9,
+  "first_passage": "passage: 실습 파일 보관 실습 파일은 개인 폴더에 보관합니다.",
+  "sql_schema": "CREATE TABLE IF NOT EXISTS day23_search_docs (\n    id integer PRIMARY KEY,\n    title text NOT NULL,\n    content text NOT NULL,\n    category text NOT NULL,\n    source_version text NOT NULL,\n    embedding_model text NOT NULL,\n    embedding vector(384) NOT NULL\n)",
+  "sql_topk": "SELECT id,title,content,category,source_version,\n     embedding_model,embedding <=> %s AS distance\nFROM day23_search_docs WHERE embedding_model=%s\nORDER BY embedding <=> %s ASC LIMIT %s",
+  "hits": [
+    {
+      "id": 102,
+      "content": "프로젝트 폴더에서 서버를 실행합니다.",
+      "distance": 0.114599
+    },
+    {
+      "id": 103,
+      "content": "오류 메시지와 시도한 작업을 함께 적습니다.",
+      "distance": 0.195967
+    },
+    {
+      "id": 107,
+      "content": "필요한 Python 패키지는 기존 가상환경에 추가합니다.",
+      "distance": 0.19779
+    }
+  ]
+}
