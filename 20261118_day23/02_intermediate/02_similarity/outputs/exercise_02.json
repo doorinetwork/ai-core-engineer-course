@@ -1,0 +1,23 @@
+{
+  "exercise": 2,
+  "level": 2,
+  "source_mode": "local_math",
+  "dot": 0.8,
+  "cosine": 0.8,
+  "l2": 0.632456,
+  "cosine_distance": 0.2,
+  "normalized_v": [
+    0.707107,
+    0.707107
+  ],
+  "rankings": {
+    "dot": [
+      "V",
+      "U"
+    ],
+    "cosine": [
+      "U",
+      "V"
+    ]
+  }
+}
