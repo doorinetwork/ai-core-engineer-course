@@ -1,0 +1,39 @@
+{
+  "overlap": {
+    "coverage": 1.0,
+    "covered_characters": 20,
+    "repeat_extra_chars": 4,
+    "errors": {
+      "gaps": [],
+      "duplicate_ids": []
+    },
+    "valid": true
+  },
+  "missing": {
+    "coverage": 0.9,
+    "covered_characters": 18,
+    "repeat_extra_chars": 0,
+    "errors": {
+      "gaps": [
+        [
+          8,
+          10
+        ]
+      ],
+      "duplicate_ids": []
+    },
+    "valid": false
+  },
+  "duplicate": {
+    "coverage": 1.0,
+    "covered_characters": 20,
+    "repeat_extra_chars": 8,
+    "errors": {
+      "gaps": [],
+      "duplicate_ids": [
+        "A"
+      ]
+    },
+    "valid": false
+  }
+}
