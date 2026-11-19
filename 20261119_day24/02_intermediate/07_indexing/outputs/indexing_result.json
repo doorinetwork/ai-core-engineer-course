@@ -1,0 +1,15 @@
+{
+  "source_mode": "e5_pgvector_live",
+  "doc_id": "DOC-ASSIGN",
+  "chunk_count": 1,
+  "stored": 1,
+  "retrieved": [
+    {
+      "citation_id": 1,
+      "chunk_id": "b93ceb953540cf43889999b26d3c1f483105e450771d9defd6b226a28e38d35b",
+      "body": "과제 안내\n\n과제 파일은 개인 폴더에 보관합니다.\n제출 기한은 담당자가 공지한 날짜를 따릅니다.\n기한 이후 제출 가능 여부는 담당자에게 확인하세요.\n답안을 제출하기 전에 파일명을 확인합니다.",
+      "source_locator": "assignment.txt",
+      "distance": 0.09997928142547607
+    }
+  ]
+}
