@@ -32,7 +32,7 @@ Raw → Parsing(ParsedUnit) → Cleaning(CleanUnit) → Chunking → 검증 → 
  
 | 항목 | 내용 |
 |---|---|
-| 개념 | 원본 바이트(TXT·MD·HTML·PDF). Manifest와 SHA-256으로 보존한다. |
+| 개념 | 원본 바이트(TXT·MD·HTML·PDF). Manifest와 SHA-256으로 보존 |
 | 전체 지도에서의 역할 | 모든 출처의 기준점이며 변경 이력을 추적하는 근거 |
 | 입력 (이전 단계로부터) | 수집 대상 문서 목록(Manifest) |
 | 출력 | 파일 바이트와 SHA-256 해시를 Parsing 단계로 전달 |
@@ -48,7 +48,7 @@ Raw → Parsing(ParsedUnit) → Cleaning(CleanUnit) → Chunking → 검증 → 
  
 | 항목 | 내용 |
 |---|---|
-| 개념 | 형식별로 읽어 낸 단위(문단·섹션·표 행·페이지). 구조와 `source_locator`를 보존한다. |
+| 개념 | 형식별로 읽어 낸 단위(문단·섹션·표 행·페이지). 구조와 `source_locator`를 보존 |
 | 전체 지도에서의 역할 | 원문에서 구조와 출처 위치를 보존하며 텍스트를 추출 |
 | 입력 (이전 단계로부터) | Raw File(바이트·해시) |
 | 출력 | `unit_id`, `raw_text`, `source_locator`, `page_number` 등을 가진 unit 목록.<br>스캔 PDF는 OCR 보류, 미지원 형식은 unsupported로 분류 |
@@ -82,7 +82,7 @@ Raw → Parsing(ParsedUnit) → Cleaning(CleanUnit) → Chunking → 검증 → 
  
 | 실습 예시 함수 | 역할 |
 |---|---|
-| `char_windows()` | size 길이 창을 overlap만큼 겹치며 밀어 `[start,end)` 구간을 차례로 생성 |
+| `char_windows()` | size 길이 window를 overlap만큼 겹치며 `[start,end)` 구간을 차례로 생성 |
 | `stable_chunk_id()` | 문서·버전·unit·구간 정보를 해시해 재실행해도 같은 chunk_id를 생성 |
 | `build_chunk()` | 구간을 검증한 뒤 메타데이터와 `passage:` 접두어를 붙여 Chunk dict를 조립 |
 | `make_chunks()` | unit을 정제하고 구간 분할부터 Chunk 조립까지 한 번에 수행 |
@@ -93,7 +93,7 @@ Raw → Parsing(ParsedUnit) → Cleaning(CleanUnit) → Chunking → 검증 → 
 | 항목 | 내용 |
 |---|---|
 | 개념 | 길이·위치·누락·중복을 인덱싱 전에 검출하는 품질 검사 |
-| 전체 지도에서의 역할 | 불량 Chunk가 저장·검색 단계로 넘어가지 못하게 막는 관문 |
+| 전체 지도에서의 역할 | 적절하지 못한 Chunk가 저장·검색 단계로 넘어가지 못하게 막는 관문 |
 | 입력 (이전 단계로부터) | Chunk 목록과 CleanUnit 원문 |
 | 출력 | 통과한 Chunk만 다음 단계로 전달. 위반 시 예외 또는 Report |
  
@@ -115,14 +115,14 @@ Raw → Parsing(ParsedUnit) → Cleaning(CleanUnit) → Chunking → 검증 → 
  
 | 항목 | 내용 |
 |---|---|
-| 개념 | E5-small 384차원 벡터 변환. 문서는 `passage:`, 질의는 `query:` 접두어를 붙인다. |
+| 개념 | E5-small 384차원 벡터 변환. 문서는 `passage:`, 질의는 `query:` 접두어를 추가 |
 | 전체 지도에서의 역할 | 텍스트를 검색 가능한 벡터로 변환 |
 | 입력 (이전 단계로부터) | 검증을 통과한 Chunk의 `embedding_text` |
-| 출력 | Chunk별 vector(384). Token·차원·Norm을 확인 |
+| 출력 | Chunk별 vector. Token·차원·Norm을 확인 |
  
 | 실습 예시 함수 | 역할 |
 |---|---|
-| `load_encoder()` | E5-small 모델을 CPU로 불러오고 출력 차원이 384인지 확인 |
+| `load_encoder()` | E5-small 모델을 CPU로 불러오고 출력 차원 확인 |
 | `encode_passages()` | 접두어와 토큰 한도를 검사한 뒤 Chunk 전체를 정규화된 벡터로 변환 |
 | `e5_query()` | 질문 앞에 `query:`를 붙이고 빈 질문은 거부 |
 | `encode_query()` | 질문을 E5 질의 벡터(384차원)로 변환 |
@@ -131,7 +131,7 @@ Raw → Parsing(ParsedUnit) → Cleaning(CleanUnit) → Chunking → 검증 → 
  
 | 항목 | 내용 |
 |---|---|
-| 개념 | 새 버전을 staging → ready → published 포인터로 관리하고, 한 Transaction으로 공개 전환한다. |
+| 개념 | 새 버전을 staging → ready → published 포인터로 관리하고, 한 Transaction으로 공개 전환 |
 | 전체 지도에서의 역할 | 재실행·개정·실패 시 공개 상태 관리. 실패해도 이전 공개판 유지 |
 | 입력 (이전 단계로부터) | Chunk, 벡터, 문서 메타데이터 |
 | 출력 | 현재 공개 버전의 Chunk만 검색 대상으로 pgvector에 저장 |
