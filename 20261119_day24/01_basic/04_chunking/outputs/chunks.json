@@ -1,0 +1,20 @@
+{
+  "source": "71-character teaching fixture",
+  "chunks": [
+    {
+      "char_start": 0,
+      "char_end": 40,
+      "text": "가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가"
+    },
+    {
+      "char_start": 30,
+      "char_end": 70,
+      "text": "가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가"
+    },
+    {
+      "char_start": 60,
+      "char_end": 71,
+      "text": "가가가가가가가가가가가"
+    }
+  ]
+}
