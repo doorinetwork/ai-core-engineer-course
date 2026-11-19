@@ -1,0 +1,28 @@
+{
+  "source_mode": "e5_pgvector_live",
+  "v1_chunks": 2,
+  "v2_chunks": 2,
+  "db_status": "verified",
+  "injected_failure": {
+    "rollback_ok": true,
+    "pointer_before": [
+      "v1",
+      "ingest-e5-v1"
+    ],
+    "pointer_after": [
+      "v1",
+      "ingest-e5-v1"
+    ]
+  },
+  "after_retry": {
+    "pointer": [
+      "v2",
+      "ingest-e5-v1"
+    ],
+    "hits_for_this_document": 2,
+    "source_versions": [
+      "v2",
+      "v2"
+    ]
+  }
+}
