@@ -1,0 +1,13 @@
+{
+  "failure_reasons": [
+    {
+      "chunk_id": "C1",
+      "reason": "text_mismatch"
+    },
+    {
+      "chunk_id": "C2",
+      "reason": "duplicate_id"
+    }
+  ],
+  "fixed_passed": 2
+}
