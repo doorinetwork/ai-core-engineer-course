@@ -1,0 +1,56 @@
+{
+  "chunks": [
+    {
+      "doc_id": "DOC-ATTEND",
+      "source_version": "v1",
+      "category": "학사",
+      "pipeline_version": "ingest-e5-v1",
+      "chunk_id": "cce45593280635a40035059b1efcaefe307211789da5bf34ce04951e27cc6541",
+      "unit_id": "sec-1",
+      "source_locator": "attendance.md#sec-1",
+      "section_title": "지각과 결석",
+      "page_number": null,
+      "char_start": 0,
+      "char_end": 30,
+      "body": "수업 시작 후 10분까지 입실하면 지각으로 기록합니다.",
+      "embedding_text": "passage: 수업 시작 후 10분까지 입실하면 지각으로 기록합니다."
+    },
+    {
+      "doc_id": "DOC-ATTEND",
+      "source_version": "v1",
+      "category": "학사",
+      "pipeline_version": "ingest-e5-v1",
+      "chunk_id": "cf3b83fba315e29b557d88e68af8298689c95a296a4396c2840462f39eb09b09",
+      "unit_id": "sec-1",
+      "source_locator": "attendance.md#sec-1",
+      "section_title": "지각과 결석",
+      "page_number": null,
+      "char_start": 31,
+      "char_end": 52,
+      "body": "10분을 초과하면 결석으로 기록합니다.",
+      "embedding_text": "passage: 10분을 초과하면 결석으로 기록합니다."
+    },
+    {
+      "doc_id": "DOC-ATTEND",
+      "source_version": "v1",
+      "category": "학사",
+      "pipeline_version": "ingest-e5-v1",
+      "chunk_id": "a8336c6717f5940810c8fdf9c285959e9aa8444e90db18f322f71264c5e6911f",
+      "unit_id": "sec-1",
+      "source_locator": "attendance.md#sec-1",
+      "section_title": "지각과 결석",
+      "page_number": null,
+      "char_start": 53,
+      "char_end": 82,
+      "body": "단, 사전 승인을 받은 경우에는 운영실에 확인합니다.",
+      "embedding_text": "passage: 단, 사전 승인을 받은 경우에는 운영실에 확인합니다."
+    }
+  ],
+  "stable": true,
+  "token_check": {
+    "status": "not_run",
+    "checked": 0,
+    "oversize_ids": []
+  },
+  "embedding_input_contract": "passage: [optional title] + body"
+}
