@@ -1,0 +1,30 @@
+{
+  "report": {
+    "doc_id": "DOC-ASSIGN",
+    "status": "prepared_not_embedded",
+    "chunk_count": 1,
+    "source_versions": [
+      "v1"
+    ],
+    "chunk_ids": [
+      "b93ceb953540cf43889999b26d3c1f483105e450771d9defd6b226a28e38d35b"
+    ]
+  },
+  "chunks": [
+    {
+      "doc_id": "DOC-ASSIGN",
+      "source_version": "v1",
+      "category": "학사",
+      "pipeline_version": "ingest-e5-v1",
+      "chunk_id": "b93ceb953540cf43889999b26d3c1f483105e450771d9defd6b226a28e38d35b",
+      "unit_id": "text-1",
+      "source_locator": "assignment.txt",
+      "section_title": "",
+      "page_number": null,
+      "char_start": 0,
+      "char_end": 106,
+      "body": "과제 안내\n\n과제 파일은 개인 폴더에 보관합니다.\n제출 기한은 담당자가 공지한 날짜를 따릅니다.\n기한 이후 제출 가능 여부는 담당자에게 확인하세요.\n답안을 제출하기 전에 파일명을 확인합니다.",
+      "embedding_text": "passage: 과제 안내\n\n과제 파일은 개인 폴더에 보관합니다.\n제출 기한은 담당자가 공지한 날짜를 따릅니다.\n기한 이후 제출 가능 여부는 담당자에게 확인하세요.\n답안을 제출하기 전에 파일명을 확인합니다."
+    }
+  ]
+}
