@@ -1,0 +1,126 @@
+{
+  "items": [
+    {
+      "doc": {
+        "doc_id": "DOC-ATTEND",
+        "category": "학사",
+        "source_version": "v1",
+        "source_uri": "raw/attendance.md"
+      },
+      "status": "parsed",
+      "units": [
+        {
+          "unit_id": "sec-1",
+          "page_number": null,
+          "section_title": "지각과 결석",
+          "source_locator": "attendance.md#sec-1",
+          "raw_text": "수업 시작 후 10분까지 입실하면 지각으로 기록합니다.\n10분을 초과하면 결석으로 기록합니다.\n단, 사전 승인을 받은 경우에는 운영실에 확인합니다."
+        },
+        {
+          "unit_id": "sec-2",
+          "page_number": null,
+          "section_title": "출석 문의",
+          "source_locator": "attendance.md#sec-2",
+          "raw_text": "출석 기록에 오류가 있다면 운영실에 문의하세요."
+        }
+      ],
+      "reason": null
+    },
+    {
+      "doc": {
+        "doc_id": "DOC-ASSIGN",
+        "category": "학사",
+        "source_version": "v1",
+        "source_uri": "raw/assignment.txt"
+      },
+      "status": "parsed",
+      "units": [
+        {
+          "unit_id": "text-1",
+          "page_number": null,
+          "section_title": "",
+          "source_locator": "assignment.txt",
+          "raw_text": "과제 안내\n\n과제 파일은 개인 폴더에 보관합니다.\n제출 기한은 담당자가 공지한 날짜를 따릅니다.\n기한 이후 제출 가능 여부는 담당자에게 확인하세요.\n답안을 제출하기 전에 파일명을 확인합니다.\n"
+        }
+      ],
+      "reason": null
+    },
+    {
+      "doc": {
+        "doc_id": "DOC-FACILITY",
+        "category": "시설",
+        "source_version": "v1",
+        "source_uri": "raw/facility.html"
+      },
+      "status": "parsed",
+      "units": [
+        {
+          "unit_id": "main-1",
+          "page_number": null,
+          "section_title": "시설 안내",
+          "source_locator": "facility.html#main",
+          "raw_text": "시설 안내\n컴퓨터 실습실은 안내에 따라 이용합니다.\n시설 이용 시간\n시설: 실습실 | 안내: 담당자 안내에 따라 운영\n시설: 회의실 | 안내: 예약 승인 후 이용\n장비 이상은 운영실에 알립니다."
+        }
+      ],
+      "reason": null
+    },
+    {
+      "doc": {
+        "doc_id": "DOC-CAREER",
+        "category": "지원",
+        "source_version": "v1",
+        "source_uri": "raw/career.pdf"
+      },
+      "status": "parsed",
+      "units": [
+        {
+          "unit_id": "page-1",
+          "page_number": 1,
+          "section_title": "",
+          "source_locator": "career.pdf#page=1",
+          "raw_text": "진로 상담 안내\n진로 상담은 운영실에 신청할 수 있습니다.\n상담 신청 시 희망 날짜와 문의 주제를 함께 적습니다.\n상담 일정은 담당자 확인 후 확정됩니다.\n1 / 2\n"
+        },
+        {
+          "unit_id": "page-2",
+          "page_number": 2,
+          "section_title": "",
+          "source_locator": "career.pdf#page=2",
+          "raw_text": "진로 상담 안내 - 두 번째 페이지\n신청한 상담을 변경하려면 담당자에게 미리 연락하세요.\n상담 내용에는 개인정보가 포함될 수 있으므로 공개 게시판에 적지 않습니다.\n2 / 2\n"
+        }
+      ],
+      "reason": null
+    },
+    {
+      "doc": {
+        "doc_id": "DOC-SCAN",
+        "category": "안내",
+        "source_version": "v1",
+        "source_uri": "raw/scan.pdf"
+      },
+      "status": "needs_ocr",
+      "units": [
+        {
+          "unit_id": "page-1",
+          "page_number": 1,
+          "section_title": "",
+          "source_locator": "scan.pdf#page=1",
+          "raw_text": ""
+        }
+      ],
+      "reason": "image_only_known_fixture"
+    },
+    {
+      "doc": {
+        "doc_id": "DOC-UNSUPPORTED"
+      },
+      "status": "unsupported",
+      "units": [],
+      "reason": "unsupported_extension"
+    }
+  ],
+  "status_counts": {
+    "needs_ocr": 1,
+    "parsed": 4,
+    "unsupported": 1
+  }
+}
