@@ -1,0 +1,12 @@
+{
+  "citations": {
+    "202": {
+      "chunk_id": "7530a23f044e96187cf2023c4b836e57f67db378310911e6004ad7311741c264",
+      "source_locator": "DOC-ATTEND.md#sec-1",
+      "doc_id": "DOC-ATTEND"
+    }
+  },
+  "invalid": [],
+  "excluded_permission": 1,
+  "excluded_version_or_category": 1
+}
