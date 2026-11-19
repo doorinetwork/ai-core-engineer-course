@@ -1,0 +1,19 @@
+{
+  "total": 3,
+  "selected": [
+    {
+      "doc_id": "DOC-ATTEND",
+      "source_locator": "attendance.md#sec-1",
+      "category": "학사",
+      "pipeline_version": "ingest-e5-v1",
+      "char_start": 0,
+      "char_end": 20,
+      "page_number": null,
+      "chunk_id": "C2",
+      "source_version": "v2"
+    }
+  ],
+  "invalid": [],
+  "excluded_other_version": 1,
+  "excluded_other_category": 1
+}
