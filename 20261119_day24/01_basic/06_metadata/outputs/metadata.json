@@ -1,0 +1,13 @@
+{
+  "total": 2,
+  "selected": [
+    {
+      "chunk_id": "C1",
+      "body": "출석 안내",
+      "doc_id": "DOC-ATTEND",
+      "source_version": "v1",
+      "category": "학사",
+      "source_locator": "attendance.md#sec-1"
+    }
+  ]
+}
