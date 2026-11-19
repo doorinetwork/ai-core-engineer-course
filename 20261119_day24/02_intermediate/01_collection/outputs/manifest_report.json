@@ -1,0 +1,62 @@
+{
+  "total": 6,
+  "counts": {
+    "collected": 5,
+    "unsupported": 1,
+    "read_error": 0
+  },
+  "items": [
+    {
+      "doc_id": "DOC-ASSIGN",
+      "file": "assignment.txt",
+      "version": "v1",
+      "category": "학사",
+      "status": "collected",
+      "size_bytes": 267,
+      "raw_sha256": "722ed29e5256a35cb31ae44b288b1e2d52784937ade2f4963232fa8e3148e07f"
+    },
+    {
+      "doc_id": "DOC-ATTEND",
+      "file": "attendance.md",
+      "version": "v1",
+      "category": "학사",
+      "status": "collected",
+      "size_bytes": 328,
+      "raw_sha256": "21b14b7523f278f49dcd6289d18c881734219fed78cef696d8a2add8d2dbf5dd"
+    },
+    {
+      "doc_id": "DOC-CAREER",
+      "file": "career.pdf",
+      "version": "v1",
+      "category": "지원",
+      "status": "collected",
+      "size_bytes": 36195,
+      "raw_sha256": "08bfd6175f9438379c77b0502890c0b9f804cf566c377f4e203e69d50dd5a3d8"
+    },
+    {
+      "doc_id": "DOC-FACILITY",
+      "file": "facility.html",
+      "version": "v1",
+      "category": "시설",
+      "status": "collected",
+      "size_bytes": 728,
+      "raw_sha256": "0f949ac15d66cc6ff55cdfff777b83bc6f5ef2fe79a341de8ee14878768b01da"
+    },
+    {
+      "doc_id": "DOC-SCAN",
+      "file": "scan.pdf",
+      "version": "v1",
+      "category": "안내",
+      "status": "collected",
+      "size_bytes": 34629,
+      "raw_sha256": "077f1853a15367260ae875a2eafd1031c6ee38078ea235884a6286a5fcc1963a"
+    },
+    {
+      "doc_id": "DOC-UNSUPPORTED",
+      "file": "unsupported.xyz",
+      "version": "v1",
+      "category": "기타",
+      "status": "unsupported"
+    }
+  ]
+}
