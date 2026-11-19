@@ -1,0 +1,36 @@
+{
+  "units": [
+    {
+      "doc_id": "DOC-ATTEND",
+      "source_version": "v1",
+      "unit_id": "sec-1",
+      "cleaner_version": "nfc-prose-v1",
+      "clean_text": "수업 시작 후 10분까지 입실하면 지각으로 기록합니다.\n10분을 초과하면 결석으로 기록합니다.\n단, 사전 승인을 받은 경우에는 운영실에 확인합니다.",
+      "clean_hash": "db35ad3119a2df683c9313322dbdc804a0812af5930d79501b18ce7871da5bce",
+      "meaning_check": {
+        "passed": true,
+        "lost_phrases": []
+      },
+      "idempotent": true
+    },
+    {
+      "doc_id": "DOC-ATTEND",
+      "source_version": "v1",
+      "unit_id": "sec-2",
+      "cleaner_version": "nfc-prose-v1",
+      "clean_text": "출석 기록에 오류가 있다면 운영실에 문의하세요.",
+      "clean_hash": "526f8c55538f0a49a08d8463844418fe56b3276eceb0ca1055e1a30e37d298e5",
+      "meaning_check": {
+        "passed": true,
+        "lost_phrases": []
+      },
+      "idempotent": true
+    }
+  ],
+  "bad_rule": {
+    "passed": false,
+    "lost_phrases": [
+      "10분"
+    ]
+  }
+}
