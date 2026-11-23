@@ -1,0 +1,64 @@
+{
+  "exercise": "06_context_chain",
+  "execution": {
+    "mode": "offline_fixture",
+    "db": false,
+    "embedding": false,
+    "llm": false
+  },
+  "real_model_calls": 0,
+  "context": "[201] attendance_v2.md#sec-1\n수업 시작 후 15분까지 입실하면 지각으로 기록합니다. 15분을 초과하면 결석으로 기록합니다. 단, 사전 승인을 받은 경우에는 운영실에 확인합니다.\n\n[202] assignment.txt\n과제 파일은 개인 폴더에 보관합니다. 제출 기한은 담당자가 공지한 날짜를 따릅니다. 기한 이후 제출 가능 여부는 담당자에게 확인하세요. 답안을 제출하기 전에 파일명을 확인합니다.",
+  "included_ids": [
+    201,
+    202
+  ],
+  "included_sources": [
+    {
+      "citation_id": 201,
+      "chunk_id": "demo-attend-v2-sec1",
+      "doc_id": "DOC-ATTEND",
+      "source_version": "v2",
+      "source_locator": "attendance_v2.md#sec-1",
+      "category": "학사"
+    },
+    {
+      "citation_id": 202,
+      "chunk_id": "demo-assign-v1-sec1",
+      "doc_id": "DOC-ASSIGN",
+      "source_version": "v1",
+      "source_locator": "assignment.txt",
+      "category": "학사"
+    }
+  ],
+  "prompt_input": {
+    "question": "15분 늦으면 어떻게 기록되나요?",
+    "context": "[201] attendance_v2.md#sec-1\n수업 시작 후 15분까지 입실하면 지각으로 기록합니다. 15분을 초과하면 결석으로 기록합니다. 단, 사전 승인을 받은 경우에는 운영실에 확인합니다.\n\n[202] assignment.txt\n과제 파일은 개인 폴더에 보관합니다. 제출 기한은 담당자가 공지한 날짜를 따릅니다. 기한 이후 제출 가능 여부는 담당자에게 확인하세요. 답안을 제출하기 전에 파일명을 확인합니다."
+  },
+  "bundle": {
+    "raw": {
+      "type": "AIMessage",
+      "text": "{\"status\": \"answered\", \"answer\": \"수업 시작 후 15분까지는 지각으로 기록합니다. 사전 승인을 받은 경우에는 운영실에 확인합니다.\", \"source_ids\": [201], \"missing_information\": \"\"}",
+      "response_metadata": {
+        "status": "completed",
+        "source_mode": "fixed_fixture"
+      },
+      "usage_metadata": null
+    },
+    "parsed": {
+      "status": "answered",
+      "answer": "수업 시작 후 15분까지는 지각으로 기록합니다. 사전 승인을 받은 경우에는 운영실에 확인합니다.",
+      "source_ids": [
+        201
+      ],
+      "missing_information": ""
+    },
+    "parsing_error": null
+  },
+  "observed_source_ids": [
+    201
+  ],
+  "source_id_membership_only": true,
+  "experiments": {},
+  "human_evidence_review": "pending",
+  "review_note": "bundle·포함 ID를 관찰한 기록입니다. 자료형·상태·출처의 승인 검사는 실습07에서 진행합니다."
+}
