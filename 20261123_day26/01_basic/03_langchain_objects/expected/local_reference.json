@@ -1,0 +1,35 @@
+{
+  "execution": {
+    "mode": "concept_review",
+    "db": false,
+    "embedding": false,
+    "llm": false
+  },
+  "components": [
+    {
+      "component": "Document",
+      "input": "page_content와 metadata를 담아 생성",
+      "output": "본문·출처를 보관하는 데이터 객체",
+      "access": "data"
+    },
+    {
+      "component": "Retriever",
+      "input": "query·category·candidate_k가 있는 dict",
+      "output": "list[Document]",
+      "access": "invoke"
+    },
+    {
+      "component": "Prompt",
+      "input": "question·context가 있는 dict",
+      "output": "ChatPromptValue",
+      "access": "invoke"
+    },
+    {
+      "component": "Chat Model",
+      "input": "ChatPromptValue 또는 메시지 목록",
+      "output": "AIMessage",
+      "access": "invoke"
+    }
+  ],
+  "observation": "입력·출력 대응표; Prompt·모델 invoke는 실행하지 않음"
+}
