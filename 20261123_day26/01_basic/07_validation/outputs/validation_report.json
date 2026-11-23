@@ -1,0 +1,49 @@
+{
+  "source_mode": "validation_fixtures",
+  "execution": {
+    "mode": "offline",
+    "db": false,
+    "embedding": false,
+    "llm": false
+  },
+  "context": "[201] attendance_v2.md#sec-1\n수업 시작 후 15분까지 입실하면 지각으로 기록합니다. 15분을 초과하면 결석으로 기록합니다. 단, 사전 승인을 받은 경우에는 운영실에 확인합니다.",
+  "included_ids": [
+    201
+  ],
+  "cases": [
+    {
+      "case": "normal",
+      "outcome": "accepted",
+      "error": null,
+      "result": {
+        "status": "answered",
+        "answer": "일반 기준으로 15분까지는 지각입니다. 사전 승인을 받았다면 운영실에 확인합니다.",
+        "source_ids": [
+          201
+        ],
+        "missing_information": ""
+      },
+      "human_review_required": true
+    },
+    {
+      "case": "insufficient",
+      "outcome": "accepted",
+      "error": null,
+      "result": {
+        "status": "insufficient_context",
+        "answer": "제공된 지식으로는 답할 수 없습니다.",
+        "source_ids": [],
+        "missing_information": "정확한 과제 마감 날짜가 자료에 없습니다."
+      },
+      "human_review_required": true
+    },
+    {
+      "case": "unknown_source",
+      "outcome": "rejected",
+      "error": "answer_validation_error",
+      "result": null,
+      "human_review_required": false
+    }
+  ],
+  "grounding_review": "reports/review.md에서 숫자·조건·예외와 원문 위치를 직접 대조합니다."
+}
