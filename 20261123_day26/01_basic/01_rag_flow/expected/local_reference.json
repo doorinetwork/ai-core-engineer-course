@@ -1,0 +1,46 @@
+{
+  "execution": {
+    "mode": "concept_review",
+    "db": false,
+    "embedding": false,
+    "llm": false
+  },
+  "stages": [
+    {
+      "stage": "Retriever",
+      "input": "질문·검색 조건",
+      "output": "관련 청크 후보"
+    },
+    {
+      "stage": "Context Builder",
+      "input": "후보 목록",
+      "output": "선택한 근거·포함 ID"
+    },
+    {
+      "stage": "Prompt",
+      "input": "규칙·질문·Context",
+      "output": "모델이 읽을 메시지"
+    },
+    {
+      "stage": "Generator",
+      "input": "모델 입력",
+      "output": "생성된 답변"
+    },
+    {
+      "stage": "Validator · Source 연결",
+      "input": "생성 결과·허용 ID",
+      "output": "검증 결과·원문 위치"
+    }
+  ],
+  "case": {
+    "citation_id": 201,
+    "doc_id": "DOC-ATTEND",
+    "source_version": "v2",
+    "source_locator": "attendance_v2.md#sec-1",
+    "evidence": "수업 시작 후 15분까지 입실하면 지각으로 기록합니다. 15분을 초과하면 결석으로 기록합니다. 단, 사전 승인을 받은 경우에는 운영실에 확인합니다.",
+    "question": "15분 늦으면 어떻게 기록되나요?",
+    "judgment": "지각",
+    "exception_to_check": "사전 승인을 받은 경우 운영실 확인"
+  },
+  "observation": "사람이 강의 원문을 읽고 작성한 역할·근거 확인표"
+}
