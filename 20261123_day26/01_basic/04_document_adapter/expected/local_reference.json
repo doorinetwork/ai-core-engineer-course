@@ -1,0 +1,28 @@
+{
+  "execution": {
+    "mode": "local_adapter",
+    "db": false,
+    "embedding": false,
+    "llm": false
+  },
+  "input_source": "lecture_fixture",
+  "input_count": 1,
+  "document_count": 1,
+  "documents": [
+    {
+      "citation_id": 201,
+      "body_preserved": true,
+      "metadata_preserved": true,
+      "citation_id_type": "int",
+      "page_content": "수업 시작 후 15분까지 입실하면 지각으로 기록합니다. 15분을 초과하면 결석으로 기록합니다. 단, 사전 승인을 받은 경우에는 운영실에 확인합니다.",
+      "metadata": {
+        "citation_id": 201,
+        "chunk_id": "demo-attend-v2-sec1",
+        "doc_id": "DOC-ATTEND",
+        "source_version": "v2",
+        "source_locator": "attendance_v2.md#sec-1",
+        "category": "학사"
+      }
+    }
+  ]
+}
