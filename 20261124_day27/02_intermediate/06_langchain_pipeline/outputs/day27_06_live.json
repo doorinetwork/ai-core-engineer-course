@@ -1,0 +1,64 @@
+{
+  "execution_mode": "live_e5_cuda_postgresql_llm",
+  "row": {
+    "status": "answered",
+    "result": {
+      "status": "answered",
+      "answer": "예약 시스템의 ‘나의 예약’ 메뉴에서 해당 예약을 선택한 뒤 취소를 누르세요. 예약 시작 2시간 전까지 취소할 수 있습니다.",
+      "source_ids": [
+        2
+      ],
+      "missing_information": ""
+    },
+    "sources": [
+      {
+        "citation_id": 2,
+        "chunk_id": "FAC-102-C1",
+        "doc_id": "FAC-102",
+        "source_version": "2026-11-v2",
+        "source_locator": "guides/fac-102.md#section-1",
+        "category": "시설"
+      }
+    ],
+    "trace": {
+      "original_question": "그럼 취소는 어떻게 해?",
+      "search_query": "회의실 예약은 어떻게 취소하나요?",
+      "queries": [
+        "회의실 예약은 어떻게 취소하나요?"
+      ],
+      "candidate_ids": [
+        "FAC-102-C1",
+        "FAC-107-C1",
+        "FAC-103-C1",
+        "FAC-109-C1",
+        "FAC-108-C1"
+      ],
+      "ranked_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1",
+        "FAC-107-C1",
+        "FAC-103-C1",
+        "FAC-108-C1"
+      ],
+      "included_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1"
+      ],
+      "query_count": 1,
+      "timing_ms": {
+        "rewrite": 1923.853,
+        "multiquery": 0.005,
+        "retrieval": 334.342,
+        "rerank": 4037.917,
+        "context": 0.013,
+        "generation": 1937.237
+      },
+      "source_mode": "live"
+    },
+    "trace_check": {
+      "questions_separate": true,
+      "ids_recorded": true,
+      "included_from_candidates": true
+    }
+  }
+}
