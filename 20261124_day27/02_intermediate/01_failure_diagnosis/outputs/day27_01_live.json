@@ -1,0 +1,97 @@
+{
+  "execution_mode": "fixed_diagnostic_cases",
+  "rows": [
+    {
+      "case_id": "F01",
+      "stage": "rewrite",
+      "improvement": "History에서 명확한 대상만 복원합니다.",
+      "reason": {
+        "reason": "rewrite",
+        "evidence": {
+          "ambiguous": true,
+          "gold_in_candidates": false,
+          "gold_in_context": false
+        }
+      }
+    },
+    {
+      "case_id": "F02",
+      "stage": "retrieval",
+      "improvement": "검색 대상·필터·Top-k를 점검합니다.",
+      "reason": {
+        "reason": "retrieval",
+        "evidence": {
+          "ambiguous": false,
+          "gold_in_candidates": false,
+          "gold_in_context": false
+        }
+      }
+    },
+    {
+      "case_id": "F03",
+      "stage": "reranking",
+      "improvement": "후보 문서의 관련성 순위를 다시 평가합니다.",
+      "reason": {
+        "reason": "reranking",
+        "evidence": {
+          "ambiguous": false,
+          "gold_in_candidates": true,
+          "gold_in_context": false
+        }
+      }
+    },
+    {
+      "case_id": "F04",
+      "stage": "validation",
+      "improvement": "답변과 실제 근거를 대조합니다.",
+      "reason": {
+        "reason": "validation",
+        "evidence": {
+          "ambiguous": false,
+          "gold_in_candidates": true,
+          "gold_in_context": true
+        }
+      }
+    },
+    {
+      "case_id": "F05",
+      "stage": "healthy",
+      "improvement": "정상 흐름을 유지합니다.",
+      "reason": {
+        "reason": "healthy",
+        "evidence": {
+          "ambiguous": false,
+          "gold_in_candidates": true,
+          "gold_in_context": true
+        }
+      }
+    },
+    {
+      "case_id": "F06",
+      "stage": "authorization_filter",
+      "improvement": "서버에서 접근 권한을 검사합니다.",
+      "reason": {
+        "reason": "authorization_filter",
+        "evidence": {
+          "ambiguous": false,
+          "gold_in_candidates": false,
+          "gold_in_context": false
+        }
+      }
+    },
+    {
+      "case_id": "F07",
+      "stage": "version_filter",
+      "improvement": "현재 유효한 문서만 검색합니다.",
+      "reason": {
+        "reason": "version_filter",
+        "evidence": {
+          "ambiguous": false,
+          "gold_in_candidates": false,
+          "gold_in_context": false
+        }
+      }
+    }
+  ],
+  "note": "일반 검색 알고리즘 또는 실제 LLM 모델을 호출하지 않은 진단 예시"
+}
