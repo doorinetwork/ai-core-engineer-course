@@ -1,0 +1,7 @@
+{
+  "execution_mode": "offline_fixture",
+  "output_sections": [
+    "rows"
+  ],
+  "note": "고정 예시 출력 구조만 참고하세요. 실제 후보·점수는 환경에 따라 다릅니다."
+}
