@@ -1,0 +1,160 @@
+{
+  "execution_mode": "live_e5_cuda_postgresql_llm",
+  "rows": [
+    {
+      "question_id": "Q01",
+      "http_status": 200,
+      "body": {
+        "status": "answered",
+        "result": {
+          "status": "answered",
+          "answer": "예약 시스템의 ‘나의 예약’ 메뉴에서 취소를 선택하면 됩니다. 예약 시작 2시간 전까지 취소할 수 있습니다.",
+          "source_ids": [
+            2
+          ],
+          "missing_information": ""
+        },
+        "sources": [
+          {
+            "citation_id": 2,
+            "chunk_id": "FAC-102-C1",
+            "doc_id": "FAC-102",
+            "source_version": "2026-11-v2",
+            "source_locator": "guides/fac-102.md#section-1",
+            "category": "시설"
+          }
+        ],
+        "trace": {
+          "original_question": "회의실 예약을 취소하는 방법은?",
+          "search_query": "회의실 예약을 취소하는 방법은?",
+          "queries": [
+            "회의실 예약을 취소하는 방법은?"
+          ],
+          "candidate_ids": [
+            "FAC-102-C1",
+            "FAC-107-C1",
+            "FAC-109-C1",
+            "FAC-103-C1",
+            "FAC-101-C1"
+          ],
+          "ranked_ids": [
+            "FAC-102-C1",
+            "FAC-109-C1",
+            "FAC-107-C1",
+            "FAC-103-C1",
+            "FAC-101-C1"
+          ],
+          "included_ids": [
+            "FAC-102-C1",
+            "FAC-109-C1"
+          ],
+          "query_count": 1,
+          "timing_ms": {
+            "rewrite": 1396.536,
+            "multiquery": 0.004,
+            "retrieval": 346.849,
+            "rerank": 4395.752,
+            "context": 0.015,
+            "generation": 1519.974
+          },
+          "source_mode": "live"
+        }
+      },
+      "response_check": {
+        "http_ok": true,
+        "citation_consistent": true
+      }
+    },
+    {
+      "question_id": "Q06",
+      "http_status": 200,
+      "body": {
+        "status": "insufficient_context",
+        "result": {
+          "status": "insufficient_context",
+          "answer": "제공된 지식으로는 답할 수 없습니다.",
+          "source_ids": [],
+          "missing_information": "과제별 정확한 마감 날짜가 제공되지 않았습니다. 과제별 안내를 확인해야 합니다."
+        },
+        "sources": [],
+        "trace": {
+          "original_question": "정확한 과제 마감 날짜는?",
+          "search_query": "정확한 과제 마감 날짜는?",
+          "queries": [
+            "정확한 과제 마감 날짜는?"
+          ],
+          "candidate_ids": [
+            "ASS-102-C1",
+            "ASS-103-C1",
+            "ASS-104-C1",
+            "ASS-101-C1",
+            "IT-102-C1"
+          ],
+          "ranked_ids": [
+            "ASS-102-C1",
+            "ASS-103-C1",
+            "ASS-104-C1",
+            "ASS-101-C1",
+            "IT-102-C1"
+          ],
+          "included_ids": [
+            "ASS-102-C1",
+            "ASS-103-C1"
+          ],
+          "query_count": 1,
+          "timing_ms": {
+            "rewrite": 0.001,
+            "multiquery": 0.003,
+            "retrieval": 155.389,
+            "rerank": 29.587,
+            "context": 0.008,
+            "generation": 2210.59
+          },
+          "source_mode": "live"
+        }
+      },
+      "response_check": {
+        "http_ok": true,
+        "citation_consistent": true
+      }
+    },
+    {
+      "question_id": "INVALID_K",
+      "http_status": 422,
+      "body": {
+        "detail": [
+          {
+            "type": "greater_than_equal",
+            "loc": [
+              "body",
+              "candidate_k"
+            ],
+            "msg": "Input should be greater than or equal to 1",
+            "input": 0,
+            "ctx": {
+              "ge": 1
+            }
+          }
+        ]
+      },
+      "response_check": {
+        "http_ok": false,
+        "error_detail": [
+          {
+            "type": "greater_than_equal",
+            "loc": [
+              "body",
+              "candidate_k"
+            ],
+            "msg": "Input should be greater than or equal to 1",
+            "input": 0,
+            "ctx": {
+              "ge": 1
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "note": "FastAPI 200·422·502 구분. 502는 고정 오류 Fixture만 사용합니다."
+}
