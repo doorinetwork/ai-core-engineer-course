@@ -1,9 +1,11 @@
-> **보고서 ID:** D27-B08-EHC-RAG 
+# 실습 08 Enhanced RAG API
+
+> **보고서 ID:** D27-B08-EHC-RAG  
 > **작성 기준일:** 2026-11-24  
 
 ## 개선된 RAG API와 실행·출처·실패 비교표
 
-### 2.1 실행 비교표
+### 실행 비교표
 
 | question_id | 요청 질문 · Category | HTTP 상태 (`http_status`) | 응답 `status` | `result.status` | Chain 실행 여부 | answer |
 |:--|:--|:--|:--|:--|:--|:--|
@@ -11,7 +13,7 @@
 | Q06 | 정확한 과제 마감 날짜는? · 지원 | **200** | `insufficient_context` | `insufficient_context` | 실행 (6 Stage 모두 기록) | 제공된 지식으로는 답할 수 없습니다. |
 | INVALID_K | Q06 요청 + `candidate_k` 0 | **422** | 없음 (`detail` 만) | 없음 | **실행 안 됨** (요청 검증에서 거부, `trace` 없음) | 없음 |
 
-### 2.2 출처 비교표
+### 출처 비교표
 
 | question_id | `source_ids` | `sources[].citation_id` | `chunk_id` | `doc_id` | `source_version` | `source_locator` | `category` | included_ids (Context) |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
@@ -22,7 +24,7 @@
 - Q01 은 Context 2개 중 **FAC-102 1개만 인용**했다. FAC-109 는 Context 에 들어갔지만 `source_ids` 에 없다.
 - Q06 은 Context 2개가 있었는데도 인용은 되지 않았다. LLM 이 '근거 부족' 을 판단한 결과다.
 
-### 2.3 실패 비교표
+### 실패 비교표
 
 | 구분 | 이번 live 행 | HTTP | 응답 모양 | 의미 |
 |:--|:--|:--|:--|:--|
