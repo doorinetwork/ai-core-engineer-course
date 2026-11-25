@@ -1,0 +1,46 @@
+{
+  "exercise": 7,
+  "level": "03_advanced",
+  "dataset_version": "d28-eval-v1",
+  "mode": "live",
+  "comparisons": [
+    {
+      "question_id": "Q01",
+      "baseline_recall": 1.0,
+      "rerank_recall": 1.0,
+      "delta_recall": 0.0,
+      "diagnosis": "inspect_answer_grounding",
+      "matrix": {
+        "baseline": {
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333,
+          "hit_at_k": 1,
+          "rr_at_k": 1.0,
+          "dcg_at_k": 7.0,
+          "ndcg_at_k": 1.0,
+          "k": 3,
+          "gold_count": 1,
+          "retrieved_count": 3
+        },
+        "rerank_only": {
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333,
+          "hit_at_k": 1,
+          "rr_at_k": 1.0,
+          "dcg_at_k": 7.0,
+          "ndcg_at_k": 1.0,
+          "k": 3,
+          "gold_count": 1,
+          "retrieved_count": 3
+        }
+      },
+      "regression": {
+        "regression": false,
+        "error_count": 0,
+        "hold_release": false,
+        "reason": "추가 사람 평가 필요"
+      }
+    }
+  ],
+  "comparison_kind": "offline_version_comparison_not_online_AB"
+}
