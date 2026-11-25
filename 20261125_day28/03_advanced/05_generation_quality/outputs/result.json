@@ -1,0 +1,72 @@
+{
+  "exercise": 5,
+  "level": "03_advanced",
+  "dataset_version": "d28-eval-v1",
+  "mode": "offline_fixture",
+  "generation_reviews": [
+    {
+      "case_id": "G01",
+      "faithfulness": 0.6666666666666666,
+      "reason": "근거 불충분: 벌금이 5만원",
+      "label_source": "human_fixture",
+      "answer_relevance": "높음",
+      "answer_correctness": "부분정답",
+      "human_review": {
+        "case_id": "G01",
+        "faithfulness": 0.6666666666666666,
+        "judge": "human_fixture",
+        "reviewer": "교육용 검수자",
+        "disagreement": "추가 사람 검토 필요",
+        "publishable": false
+      }
+    },
+    {
+      "case_id": "G02",
+      "faithfulness": 0.0,
+      "reason": "근거 불충분: 내일 오후 6시 마감",
+      "label_source": "human_fixture",
+      "answer_relevance": "높음",
+      "answer_correctness": "오답",
+      "human_review": {
+        "case_id": "G02",
+        "faithfulness": 0.0,
+        "judge": "human_fixture",
+        "reviewer": "교육용 검수자",
+        "disagreement": "추가 사람 검토 필요",
+        "publishable": false
+      }
+    },
+    {
+      "case_id": "G03",
+      "faithfulness": 1.0,
+      "reason": "모든 Claim이 제공된 Context와 일치",
+      "label_source": "human_fixture",
+      "answer_relevance": "낮음",
+      "answer_correctness": "오답",
+      "human_review": {
+        "case_id": "G03",
+        "faithfulness": 1.0,
+        "judge": "human_fixture",
+        "reviewer": "교육용 검수자",
+        "disagreement": "추가 사람 검토 필요",
+        "publishable": false
+      }
+    },
+    {
+      "case_id": "G04",
+      "faithfulness": null,
+      "reason": "검토할 Claim 없음: 별도 판정 필요",
+      "label_source": "human_fixture",
+      "answer_relevance": "높음",
+      "answer_correctness": "정답",
+      "human_review": {
+        "case_id": "G04",
+        "faithfulness": null,
+        "judge": "human_fixture",
+        "reviewer": "교육용 검수자",
+        "disagreement": "추가 사람 검토 필요",
+        "publishable": false
+      }
+    }
+  ]
+}
