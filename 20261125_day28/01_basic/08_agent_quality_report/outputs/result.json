@@ -1,0 +1,149 @@
+{
+  "exercise": 8,
+  "level": "01_basic",
+  "dataset_version": "d28-eval-v1",
+  "mode": "live",
+  "summary": {
+    "mean_recall_at_k": 1.0,
+    "mean_precision_at_k": 0.3333333333333333,
+    "mean_hit_at_k": 1.0,
+    "mean_rr_at_k": 1.0,
+    "mean_ndcg_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "evaluated_questions": 3,
+    "no_answer_excluded": 0,
+    "source_integrity_failures": 0,
+    "insufficient_context": 0,
+    "status_failures": 0,
+    "no_answer_correct_abstentions": 0,
+    "no_answer_unsupported_answers": 0,
+    "mode": "live",
+    "data_version": "d28-eval-v1",
+    "variant": "both"
+  },
+  "questions": [
+    {
+      "question_id": "Q01",
+      "variant": "both",
+      "mode": "live",
+      "data_version": "d28-eval-v1",
+      "metrics": {
+        "recall_at_k": 1.0,
+        "precision_at_k": 0.3333333333333333,
+        "hit_at_k": 1,
+        "rr_at_k": 1.0,
+        "dcg_at_k": 7.0,
+        "ndcg_at_k": 1.0,
+        "k": 3,
+        "gold_count": 1,
+        "retrieved_count": 3
+      },
+      "ranked_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1",
+        "FAC-107-C1",
+        "FAC-103-C1",
+        "FAC-101-C1"
+      ],
+      "included_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1"
+      ],
+      "status": "answered",
+      "sources_valid": true,
+      "no_answer_result": "not_no_answer",
+      "latency_ms": 16216.181,
+      "timing_ms": {
+        "rewrite": 1693.199,
+        "multiquery": 0.006,
+        "retrieval": 382.347,
+        "rerank": 4515.864,
+        "context": 0.014,
+        "generation": 1153.281
+      },
+      "answer_preview": "예약 시스템의 ‘나의 예약’ 메뉴에서 해당 예약을 선택하고 취소를 누르세요. 시작 2시간 전까지 취소할 수 있습니다."
+    },
+    {
+      "question_id": "Q02",
+      "variant": "both",
+      "mode": "live",
+      "data_version": "d28-eval-v1",
+      "metrics": {
+        "recall_at_k": 1.0,
+        "precision_at_k": 0.3333333333333333,
+        "hit_at_k": 1,
+        "rr_at_k": 1.0,
+        "dcg_at_k": 7.0,
+        "ndcg_at_k": 1.0,
+        "k": 3,
+        "gold_count": 1,
+        "retrieved_count": 3
+      },
+      "ranked_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1",
+        "FAC-107-C1",
+        "FAC-103-C1",
+        "FAC-108-C1"
+      ],
+      "included_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1"
+      ],
+      "status": "answered",
+      "sources_valid": true,
+      "no_answer_result": "not_no_answer",
+      "latency_ms": 3690.959,
+      "timing_ms": {
+        "rewrite": 1922.05,
+        "multiquery": 0.005,
+        "retrieval": 50.373,
+        "rerank": 102.614,
+        "context": 0.012,
+        "generation": 1614.489
+      },
+      "answer_preview": "예약 시스템의 ‘나의 예약’ 메뉴에서 취소를 선택하면 됩니다. 취소는 예약 시작 2시간 전까지 할 수 있습니다."
+    },
+    {
+      "question_id": "Q03",
+      "variant": "both",
+      "mode": "live",
+      "data_version": "d28-eval-v1",
+      "metrics": {
+        "recall_at_k": 1.0,
+        "precision_at_k": 0.3333333333333333,
+        "hit_at_k": 1,
+        "rr_at_k": 1.0,
+        "dcg_at_k": 7.0,
+        "ndcg_at_k": 1.0,
+        "k": 3,
+        "gold_count": 1,
+        "retrieved_count": 3
+      },
+      "ranked_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1",
+        "FAC-107-C1",
+        "FAC-103-C1",
+        "FAC-101-C1"
+      ],
+      "included_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1"
+      ],
+      "status": "answered",
+      "sources_valid": true,
+      "no_answer_result": "not_no_answer",
+      "latency_ms": 3386.001,
+      "timing_ms": {
+        "rewrite": 1768.738,
+        "multiquery": 0.005,
+        "retrieval": 47.72,
+        "rerank": 191.272,
+        "context": 0.014,
+        "generation": 1376.783
+      },
+      "answer_preview": "예약 시스템의 ‘나의 예약’ 메뉴에서 해당 예약을 선택해 취소하세요. 시작 2시간 전까지 취소할 수 있습니다."
+    }
+  ]
+}
