@@ -1,0 +1,38 @@
+{
+  "exercise": 1,
+  "level": "02_intermediate",
+  "dataset_version": "d28-eval-v1",
+  "mode": "offline_fixture",
+  "cases": [
+    {
+      "case_id": "F01",
+      "stage": "candidate_miss",
+      "evidence": "Gold 문서 ID가 최초 검색 후보에 존재하지 않음",
+      "recommendation": "Query·Metadata Filter·Indexing·Candidate-k 점검"
+    },
+    {
+      "case_id": "F02",
+      "stage": "ranking_or_context_miss",
+      "evidence": "Gold는 후보에 있으나 LLM Context에 포함되지 않음",
+      "recommendation": "Reranker·Context Top-N·길이 예산 점검"
+    },
+    {
+      "case_id": "F03",
+      "stage": "generation_failure",
+      "evidence": "근거가 Context에 있는데 답변 주장이 지지되지 않음",
+      "recommendation": "Prompt·근거 주장·출처 검증 점검"
+    },
+    {
+      "case_id": "F04",
+      "stage": "system_failure",
+      "evidence": "서비스 실행이 실패해 지표를 계산할 수 없음",
+      "recommendation": "GPU/DB/API 연결·Timeout을 먼저 진단"
+    },
+    {
+      "case_id": "F05",
+      "stage": "passed",
+      "evidence": "검색 후보·Context·답변 검토 조건 충족",
+      "recommendation": "검증 결과 기록 후 유지"
+    }
+  ]
+}
