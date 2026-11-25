@@ -1,0 +1,45 @@
+{
+  "exercise": 2,
+  "level": "02_intermediate",
+  "dataset_version": "d28-eval-v1",
+  "mode": "offline_fixture",
+  "annotations": [
+    {
+      "question_id": "Q01",
+      "gold_chunk_ids": [
+        "FAC-102-C1"
+      ],
+      "valid_ids": true,
+      "no_answer": false
+    },
+    {
+      "question_id": "Q05",
+      "gold_chunk_ids": [
+        "ACA-101-C1"
+      ],
+      "valid_ids": true,
+      "no_answer": false
+    },
+    {
+      "question_id": "Q06",
+      "gold_chunk_ids": [],
+      "valid_ids": true,
+      "no_answer": true
+    },
+    {
+      "question_id": "Q07",
+      "gold_chunk_ids": [
+        "FAC-104-C1",
+        "FAC-102-C1"
+      ],
+      "valid_ids": true,
+      "no_answer": false
+    }
+  ],
+  "target_example": {
+    "question_id": "Q01",
+    "question": "회의실 예약을 취소하는 방법은?",
+    "category": "시설",
+    "history": []
+  }
+}
