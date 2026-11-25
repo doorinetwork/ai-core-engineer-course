@@ -1,0 +1,54 @@
+{
+  "exercise": 6,
+  "level": "01_basic",
+  "dataset_version": "d28-eval-v1",
+  "mode": "live",
+  "runner_results": [
+    {
+      "question_id": "Q01",
+      "source_mode": "live",
+      "ranked_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1",
+        "FAC-107-C1",
+        "FAC-103-C1",
+        "FAC-101-C1"
+      ],
+      "included_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1"
+      ]
+    },
+    {
+      "question_id": "Q02",
+      "source_mode": "live",
+      "ranked_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1",
+        "FAC-107-C1",
+        "FAC-103-C1",
+        "FAC-108-C1"
+      ],
+      "included_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1"
+      ]
+    },
+    {
+      "question_id": "Q03",
+      "source_mode": "live",
+      "ranked_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1",
+        "FAC-103-C1",
+        "FAC-107-C1",
+        "FAC-101-C1"
+      ],
+      "included_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1"
+      ]
+    }
+  ],
+  "langchain_runnable": true
+}
