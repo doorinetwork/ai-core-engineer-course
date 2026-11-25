@@ -1,0 +1,162 @@
+{
+  "exercise": 8,
+  "level": "03_advanced",
+  "dataset_version": "d28-eval-v1",
+  "mode": "live",
+  "summary": {
+    "mean_recall_at_k": 1.0,
+    "mean_precision_at_k": 0.3333333333333333,
+    "mean_hit_at_k": 1.0,
+    "mean_rr_at_k": 1.0,
+    "mean_ndcg_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "evaluated_questions": 3,
+    "no_answer_excluded": 0,
+    "source_integrity_failures": 0,
+    "insufficient_context": 0,
+    "status_failures": 0,
+    "no_answer_correct_abstentions": 0,
+    "no_answer_unsupported_answers": 0,
+    "mode": "live",
+    "data_version": "d28-eval-v1",
+    "variant": "both"
+  },
+  "questions": [
+    {
+      "question_id": "Q01",
+      "variant": "both",
+      "mode": "live",
+      "data_version": "d28-eval-v1",
+      "metrics": {
+        "recall_at_k": 1.0,
+        "precision_at_k": 0.3333333333333333,
+        "hit_at_k": 1,
+        "rr_at_k": 1.0,
+        "dcg_at_k": 7.0,
+        "ndcg_at_k": 1.0,
+        "k": 3,
+        "gold_count": 1,
+        "retrieved_count": 3
+      },
+      "ranked_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1",
+        "FAC-107-C1",
+        "FAC-103-C1",
+        "FAC-101-C1"
+      ],
+      "included_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1"
+      ],
+      "status": "answered",
+      "sources_valid": true,
+      "no_answer_result": "not_no_answer",
+      "latency_ms": 16149.485,
+      "timing_ms": {
+        "rewrite": 1910.423,
+        "multiquery": 0.005,
+        "retrieval": 335.527,
+        "rerank": 4220.051,
+        "context": 0.02,
+        "generation": 1304.053
+      },
+      "answer_preview": "예약 시스템의 ‘나의 예약’ 메뉴에서 해당 예약을 선택해 취소하면 됩니다. 시작 2시간 전까지 취소할 수 있습니다."
+    },
+    {
+      "question_id": "Q02",
+      "variant": "both",
+      "mode": "live",
+      "data_version": "d28-eval-v1",
+      "metrics": {
+        "recall_at_k": 1.0,
+        "precision_at_k": 0.3333333333333333,
+        "hit_at_k": 1,
+        "rr_at_k": 1.0,
+        "dcg_at_k": 7.0,
+        "ndcg_at_k": 1.0,
+        "k": 3,
+        "gold_count": 1,
+        "retrieved_count": 3
+      },
+      "ranked_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1",
+        "FAC-107-C1",
+        "FAC-103-C1",
+        "FAC-101-C1"
+      ],
+      "included_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1"
+      ],
+      "status": "answered",
+      "sources_valid": true,
+      "no_answer_result": "not_no_answer",
+      "latency_ms": 3221.448,
+      "timing_ms": {
+        "rewrite": 1837.588,
+        "multiquery": 0.006,
+        "retrieval": 50.48,
+        "rerank": 100.102,
+        "context": 0.013,
+        "generation": 1231.859
+      },
+      "answer_preview": "예약 시스템의 ‘나의 예약’ 메뉴에서 해당 예약을 선택한 뒤 ‘취소’를 누르세요. 예약 시작 2시간 전까지 취소할 수 있습니다."
+    },
+    {
+      "question_id": "Q03",
+      "variant": "both",
+      "mode": "live",
+      "data_version": "d28-eval-v1",
+      "metrics": {
+        "recall_at_k": 1.0,
+        "precision_at_k": 0.3333333333333333,
+        "hit_at_k": 1,
+        "rr_at_k": 1.0,
+        "dcg_at_k": 7.0,
+        "ndcg_at_k": 1.0,
+        "k": 3,
+        "gold_count": 1,
+        "retrieved_count": 3
+      },
+      "ranked_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1",
+        "FAC-103-C1",
+        "FAC-107-C1",
+        "FAC-101-C1"
+      ],
+      "included_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1"
+      ],
+      "status": "answered",
+      "sources_valid": true,
+      "no_answer_result": "not_no_answer",
+      "latency_ms": 3062.901,
+      "timing_ms": {
+        "rewrite": 1670.954,
+        "multiquery": 0.006,
+        "retrieval": 55.434,
+        "rerank": 176.504,
+        "context": 0.014,
+        "generation": 1158.352
+      },
+      "answer_preview": "예약 시스템의 ‘나의 예약’ 메뉴에서 해당 예약의 취소를 선택하세요. 예약 시작 2시간 전까지 취소할 수 있습니다."
+    }
+  ],
+  "markdown_report": "# Day28 RAG Evaluation Report\n\n- Run mode: live\n- Variant: both\n- Mean Recall@3: 1.0\n- MRR@3: 1.0\n- No-answer excluded: 0\n- Source failures: 0\n- Quality decision: 사람 검토 후 추가 판단\n- 주의: 교육용 Fixture 점수는 모델 품질 실측값이 아닙니다.\n",
+  "agent_gate": {
+    "ready_for_agent_review": false,
+    "checks": {
+      "retrieval_recall": true,
+      "retrieval_mrr": true,
+      "source_integrity": true,
+      "execution_status": true,
+      "human_review": false,
+      "access_control_tests": false
+    },
+    "scope": "교육용 1차 Gate. Agent의 Tool 권한·안전성·운영 배포 승인 별도 필요"
+  }
+}
