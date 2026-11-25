@@ -1,0 +1,213 @@
+{
+  "exercise": 6,
+  "level": "03_advanced",
+  "dataset_version": "d28-eval-v1",
+  "mode": "live",
+  "runner_results": [
+    {
+      "question_id": "Q01",
+      "source_mode": "live",
+      "ranked_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1",
+        "FAC-107-C1",
+        "FAC-103-C1",
+        "FAC-101-C1"
+      ],
+      "included_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1"
+      ],
+      "evaluation": {
+        "question_id": "Q01",
+        "variant": "both",
+        "mode": "live",
+        "data_version": "d28-eval-v1",
+        "metrics": {
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333,
+          "hit_at_k": 1,
+          "rr_at_k": 1.0,
+          "dcg_at_k": 7.0,
+          "ndcg_at_k": 1.0,
+          "k": 3,
+          "gold_count": 1,
+          "retrieved_count": 3
+        },
+        "ranked_ids": [
+          "FAC-102-C1",
+          "FAC-109-C1",
+          "FAC-107-C1",
+          "FAC-103-C1",
+          "FAC-101-C1"
+        ],
+        "included_ids": [
+          "FAC-102-C1",
+          "FAC-109-C1"
+        ],
+        "status": "answered",
+        "sources_valid": true,
+        "no_answer_result": "not_no_answer",
+        "latency_ms": 21042.209,
+        "timing_ms": {
+          "rewrite": 5137.596,
+          "multiquery": 0.005,
+          "retrieval": 375.534,
+          "rerank": 4113.315,
+          "context": 0.012,
+          "generation": 1414.025
+        },
+        "answer_preview": "예약 시스템의 ‘나의 예약’ 메뉴에서 해당 예약을 선택한 뒤 ‘취소’를 누르세요. 예약 시작 2시간 전까지 취소할 수 있습니다."
+      },
+      "audit": {
+        "question_id": "Q01",
+        "dataset_version": "d28-eval-v1",
+        "run_mode": "live",
+        "variant": "both",
+        "source_ids": [
+          "FAC-102-C1",
+          "FAC-109-C1"
+        ],
+        "secrets_logged": false,
+        "trace_fields_checked": true
+      }
+    },
+    {
+      "question_id": "Q02",
+      "source_mode": "live",
+      "ranked_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1",
+        "FAC-107-C1",
+        "FAC-103-C1",
+        "FAC-108-C1"
+      ],
+      "included_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1"
+      ],
+      "evaluation": {
+        "question_id": "Q02",
+        "variant": "both",
+        "mode": "live",
+        "data_version": "d28-eval-v1",
+        "metrics": {
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333,
+          "hit_at_k": 1,
+          "rr_at_k": 1.0,
+          "dcg_at_k": 7.0,
+          "ndcg_at_k": 1.0,
+          "k": 3,
+          "gold_count": 1,
+          "retrieved_count": 3
+        },
+        "ranked_ids": [
+          "FAC-102-C1",
+          "FAC-109-C1",
+          "FAC-107-C1",
+          "FAC-103-C1",
+          "FAC-108-C1"
+        ],
+        "included_ids": [
+          "FAC-102-C1",
+          "FAC-109-C1"
+        ],
+        "status": "answered",
+        "sources_valid": true,
+        "no_answer_result": "not_no_answer",
+        "latency_ms": 3639.205,
+        "timing_ms": {
+          "rewrite": 2160.203,
+          "multiquery": 0.006,
+          "retrieval": 51.248,
+          "rerank": 208.1,
+          "context": 0.012,
+          "generation": 1218.312
+        },
+        "answer_preview": "예약 시스템의 ‘나의 예약’ 메뉴에서 해당 예약을 선택해 취소하면 됩니다. 예약 시작 2시간 전까지 취소할 수 있습니다."
+      },
+      "audit": {
+        "question_id": "Q02",
+        "dataset_version": "d28-eval-v1",
+        "run_mode": "live",
+        "variant": "both",
+        "source_ids": [
+          "FAC-102-C1",
+          "FAC-109-C1"
+        ],
+        "secrets_logged": false,
+        "trace_fields_checked": true
+      }
+    },
+    {
+      "question_id": "Q03",
+      "source_mode": "live",
+      "ranked_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1",
+        "FAC-103-C1",
+        "FAC-107-C1",
+        "FAC-101-C1"
+      ],
+      "included_ids": [
+        "FAC-102-C1",
+        "FAC-109-C1"
+      ],
+      "evaluation": {
+        "question_id": "Q03",
+        "variant": "both",
+        "mode": "live",
+        "data_version": "d28-eval-v1",
+        "metrics": {
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333,
+          "hit_at_k": 1,
+          "rr_at_k": 1.0,
+          "dcg_at_k": 7.0,
+          "ndcg_at_k": 1.0,
+          "k": 3,
+          "gold_count": 1,
+          "retrieved_count": 3
+        },
+        "ranked_ids": [
+          "FAC-102-C1",
+          "FAC-109-C1",
+          "FAC-103-C1",
+          "FAC-107-C1",
+          "FAC-101-C1"
+        ],
+        "included_ids": [
+          "FAC-102-C1",
+          "FAC-109-C1"
+        ],
+        "status": "answered",
+        "sources_valid": true,
+        "no_answer_result": "not_no_answer",
+        "latency_ms": 5284.322,
+        "timing_ms": {
+          "rewrite": 3641.465,
+          "multiquery": 0.002,
+          "retrieval": 52.631,
+          "rerank": 175.375,
+          "context": 0.01,
+          "generation": 1413.716
+        },
+        "answer_preview": "예약 시스템의 ‘나의 예약’ 메뉴에서 해당 회의실 예약을 선택한 뒤 ‘취소’를 누르세요. 예약 시작 2시간 전까지만 취소할 수 있습니다."
+      },
+      "audit": {
+        "question_id": "Q03",
+        "dataset_version": "d28-eval-v1",
+        "run_mode": "live",
+        "variant": "both",
+        "source_ids": [
+          "FAC-102-C1",
+          "FAC-109-C1"
+        ],
+        "secrets_logged": false,
+        "trace_fields_checked": true
+      }
+    }
+  ],
+  "langchain_runnable": true
+}
