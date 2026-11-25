@@ -1,0 +1,30 @@
+{
+  "exercise": 4,
+  "level": "03_advanced",
+  "dataset_version": "d28-eval-v1",
+  "mode": "offline_fixture",
+  "ranking": [
+    {
+      "question_id": "Q01",
+      "first_rank": 3,
+      "rr_at_3": 0.3333333333333333,
+      "dcg_at_3": 3.5,
+      "ndcg_at_3": 0.5
+    },
+    {
+      "question_id": "Q07",
+      "first_rank": 2,
+      "rr_at_3": 0.5,
+      "dcg_at_3": 1.8927892607143724,
+      "ndcg_at_3": 0.2128453970090281
+    },
+    {
+      "question_id": "Q06",
+      "first_rank": null,
+      "rr_at_3": null,
+      "dcg_at_3": 0,
+      "ndcg_at_3": null
+    }
+  ],
+  "mrr_at_3": 0.41666666666666663
+}
