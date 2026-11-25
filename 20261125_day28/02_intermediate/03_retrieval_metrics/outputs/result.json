@@ -1,0 +1,47 @@
+{
+  "exercise": 3,
+  "level": "02_intermediate",
+  "dataset_version": "d28-eval-v1",
+  "mode": "offline_fixture",
+  "metrics": [
+    {
+      "question_id": "Q01",
+      "ranked_ids": [
+        "FAC-101-C1",
+        "FAC-107-C1",
+        "FAC-102-C1",
+        "FAC-105-C1",
+        "FAC-104-C1"
+      ],
+      "gold_count": 1,
+      "hits_at_3": 1,
+      "recall_at_3": 1.0,
+      "precision_at_k": 0.3333333333333333,
+      "hit_at_k": 1
+    },
+    {
+      "question_id": "Q07",
+      "ranked_ids": [
+        "FAC-101-C1",
+        "FAC-102-C1",
+        "FAC-107-C1",
+        "FAC-104-C1",
+        "FAC-105-C1"
+      ],
+      "gold_count": 2,
+      "hits_at_3": 1,
+      "recall_at_3": 0.5,
+      "precision_at_k": 0.3333333333333333,
+      "hit_at_k": 1
+    },
+    {
+      "question_id": "Q06",
+      "ranked_ids": [],
+      "gold_count": 0,
+      "hits_at_3": 0,
+      "recall_at_3": null,
+      "precision_at_k": null,
+      "hit_at_k": null
+    }
+  ]
+}
