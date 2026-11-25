@@ -1,0 +1,33 @@
+{
+  "exercise": 1,
+  "level": "01_basic",
+  "dataset_version": "d28-eval-v1",
+  "mode": "offline_fixture",
+  "cases": [
+    {
+      "case_id": "F01",
+      "stage": "candidate_miss",
+      "evidence": "Gold 문서 ID가 최초 검색 후보에 존재하지 않음"
+    },
+    {
+      "case_id": "F02",
+      "stage": "ranking_or_context_miss",
+      "evidence": "Gold는 후보에 있으나 LLM Context에 포함되지 않음"
+    },
+    {
+      "case_id": "F03",
+      "stage": "generation_failure",
+      "evidence": "근거가 Context에 있는데 답변 주장이 지지되지 않음"
+    },
+    {
+      "case_id": "F04",
+      "stage": "system_failure",
+      "evidence": "서비스 실행이 실패해 지표를 계산할 수 없음"
+    },
+    {
+      "case_id": "F05",
+      "stage": "passed",
+      "evidence": "검색 후보·Context·답변 검토 조건 충족"
+    }
+  ]
+}
